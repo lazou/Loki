@@ -129,6 +129,9 @@
   <data name="Ammo" xml:space="preserve">
     <value>Ammo</value>
   </data>
+  <data name="Ammo Non Equipable" xml:space="preserve">
+    <value>Ammo Non Equipable</value>
+  </data>
   <data name="Ancient seed" xml:space="preserve">
     <value>Ancient seed</value>
   </data>
@@ -314,6 +317,9 @@
   </data>
   <data name="FireMagic" xml:space="preserve">
     <value>FireMagic</value>
+  </data>
+  <data name="Fish" xml:space="preserve">
+    <value>Fish</value>
   </data>
   <data name="Flint axe" xml:space="preserve">
     <value>Flint axe</value>
@@ -545,6 +551,9 @@
   </data>
   <data name="Two Handed Weapon" xml:space="preserve">
     <value>Two Handed Weapon</value>
+  </data>
+  <data name="Two Handed Weapon Left" xml:space="preserve">
+    <value>Two Handed Weapon Left</value>
   </data>
   <data name="Unarmed" xml:space="preserve">
     <value>Unarmed</value>

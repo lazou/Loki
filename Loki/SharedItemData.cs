@@ -30,6 +30,9 @@ namespace Loki
         Utility = 18,
         Tool = 19,
         AttachAtgeir = 20,
+        Fish = 21,
+        TwoHandedWeaponLeft = 22,
+        AmmoNonEquipable = 23,
     }
 
     public class SharedItemData

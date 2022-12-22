@@ -19,7 +19,7 @@ namespace Loki.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -93,6 +93,15 @@ namespace Loki.Properties {
         public static string Ammo {
             get {
                 return ResourceManager.GetString("Ammo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ammo Non Equipable.
+        /// </summary>
+        public static string Ammo_Non_Equipable {
+            get {
+                return ResourceManager.GetString("Ammo Non Equipable", resourceCulture);
             }
         }
         
@@ -655,6 +664,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fish.
+        /// </summary>
+        public static string Fish {
+            get {
+                return ResourceManager.GetString("Fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Flint axe.
         /// </summary>
         public static string Flint_axe {
@@ -1060,6 +1078,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PP_Alchemy.
+        /// </summary>
+        public static string PP_Alchemy {
+            get {
+                return ResourceManager.GetString("PP_Alchemy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rag pants.
         /// </summary>
         public static string Rag_pants {
@@ -1339,6 +1366,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two Handed Weapon Left.
+        /// </summary>
+        public static string Two_Handed_Weapon_Left {
+            get {
+                return ResourceManager.GetString("Two Handed Weapon Left", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unarmed.
         /// </summary>
         public static string Unarmed {
@@ -1362,6 +1398,60 @@ namespace Loki.Properties {
         public static string Utility {
             get {
                 return ResourceManager.GetString("Utility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Abjuration.
+        /// </summary>
+        public static string VL_Abjuration {
+            get {
+                return ResourceManager.GetString("VL_Abjuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Alteration.
+        /// </summary>
+        public static string VL_Alteration {
+            get {
+                return ResourceManager.GetString("VL_Alteration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Conjuration.
+        /// </summary>
+        public static string VL_Conjuration {
+            get {
+                return ResourceManager.GetString("VL_Conjuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Discipline.
+        /// </summary>
+        public static string VL_Discipline {
+            get {
+                return ResourceManager.GetString("VL_Discipline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Evocation.
+        /// </summary>
+        public static string VL_Evocation {
+            get {
+                return ResourceManager.GetString("VL_Evocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VL_Illusion.
+        /// </summary>
+        public static string VL_Illusion {
+            get {
+                return ResourceManager.GetString("VL_Illusion", resourceCulture);
             }
         }
         
@@ -1400,69 +1490,5 @@ namespace Loki.Properties {
                 return ResourceManager.GetString("Wood Cutting", resourceCulture);
             }
         }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Discipline {
-            get {
-                return ResourceManager.GetString("VL_Discipline", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Abjuration {
-            get {
-                return ResourceManager.GetString("VL_Abjuration", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Alteration {
-            get {
-                return ResourceManager.GetString("VL_Alteration", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Conjuration {
-            get {
-                return ResourceManager.GetString("VL_Conjuration", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Evocation {
-            get {
-                return ResourceManager.GetString("VL_Evocation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string VL_Illusion {
-            get {
-                return ResourceManager.GetString("VL_Illusion", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Wood Cutting.
-        /// </summary>
-        public static string PP_Alchemy {
-            get {
-                return ResourceManager.GetString("PP_Alchemy", resourceCulture);
-            }
-        }
-       
     }
 }
