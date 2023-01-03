@@ -574,6 +574,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Crossbow.
+        /// </summary>
+        public static string Crossbow {
+            get {
+                return ResourceManager.GetString("Crossbow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Crude bow.
         /// </summary>
         public static string Crude_bow {

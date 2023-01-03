@@ -288,6 +288,9 @@
   <data name="Crafts" xml:space="preserve">
     <value>Crafts</value>
   </data>
+  <data name="Crossbow" xml:space="preserve">
+    <value>Crossbow</value>
+  </data>
   <data name="Crude bow" xml:space="preserve">
     <value>Crude bow</value>
   </data>
