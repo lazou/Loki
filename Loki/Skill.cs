@@ -36,6 +36,7 @@ namespace Loki
                     SkillType.Unarmed => Properties.Resources.Unarmed,
                     SkillType.Pickaxes => Properties.Resources.Pickaxes,
                     SkillType.WoodCutting => Properties.Resources.Wood_Cutting,
+                    SkillType.Crossbow => Properties.Resources.Crossbow,
                     SkillType.Jump => Properties.Resources.Jump,
                     SkillType.Sneak => Properties.Resources.Sneak,
                     SkillType.Run => Properties.Resources.Run,

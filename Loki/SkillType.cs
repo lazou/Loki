@@ -16,6 +16,7 @@
         Unarmed = 11,
         Pickaxes = 12,
         WoodCutting = 13,
+        Crossbow = 14,
         Jump = 100,
         Sneak = 101,
         Run = 102,
