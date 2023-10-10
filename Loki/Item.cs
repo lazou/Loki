@@ -80,7 +80,7 @@ namespace Loki
         public double MaxDurability => SharedData == null ? 0d : SharedData.MaxDurability + Math.Max(0, Quality - 1) * SharedData.DurabilityPerLevel;
   
 
-        public Item(string name, int stack, float durability, Vector2i pos, bool equiped, int quality, int variant, long crafterId, string crafterName, List<(string, string)> itemData)
+        public Item(string name, int stack, float durability, Vector2i pos, bool equiped, int quality, int variant, long crafterId, string crafterName, List<(string, string)> itemData, int worldLevel, bool pickedUp)
         {
             Name = name;
             Stack = stack;
@@ -99,12 +99,15 @@ namespace Loki
             }
 
             ItemData = itemData;
-
+            WorldLevel = worldLevel;
+            PickedUp = pickedUp;
         }
 
         [CanBeNull] // Can be null if the item is unrecognised (very new update not accounted for etc.)
         public SharedItemData SharedData { get; }
         public List<(string, string)> ItemData { get; }
+        public int WorldLevel { get; }
+        public bool PickedUp { get; }
 
         public bool HasQualityLevels => SharedData?.MaxQuality > 1;
 

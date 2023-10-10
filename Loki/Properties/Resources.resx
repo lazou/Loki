@@ -189,6 +189,9 @@
   <data name="Bloodbag" xml:space="preserve">
     <value>Bloodbag</value>
   </data>
+  <data name="BloodMagic" xml:space="preserve">
+    <value>Blood magic</value>
+  </data>
   <data name="Blueberries" xml:space="preserve">
     <value>Blueberries</value>
   </data>
@@ -303,6 +306,9 @@
   <data name="Draugr fang" xml:space="preserve">
     <value>Draugr fang</value>
   </data>
+  <data name="ElementalMagic" xml:space="preserve">
+    <value>Elemental magic</value>
+  </data>
   <data name="fart" xml:space="preserve">
     <value>fart</value>
   </data>
@@ -318,9 +324,6 @@
   <data name="Fire resistance barley wine" xml:space="preserve">
     <value>Fire resistance barley wine</value>
   </data>
-  <data name="FireMagic" xml:space="preserve">
-    <value>FireMagic</value>
-  </data>
   <data name="Fish" xml:space="preserve">
     <value>Fish</value>
   </data>
@@ -332,9 +335,6 @@
   </data>
   <data name="Frost arrow" xml:space="preserve">
     <value>Frost arrow</value>
-  </data>
-  <data name="FrostMagic" xml:space="preserve">
-    <value>FrostMagic</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>General</value>

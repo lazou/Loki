@@ -376,6 +376,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Blood magic.
+        /// </summary>
+        public static string BloodMagic {
+            get {
+                return ResourceManager.GetString("BloodMagic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Blueberries.
         /// </summary>
         public static string Blueberries {
@@ -619,6 +628,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Elemental magic.
+        /// </summary>
+        public static string ElementalMagic {
+            get {
+                return ResourceManager.GetString("ElementalMagic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to fart.
         /// </summary>
         public static string fart {
@@ -664,15 +682,6 @@ namespace Loki.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FireMagic.
-        /// </summary>
-        public static string FireMagic {
-            get {
-                return ResourceManager.GetString("FireMagic", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Fish.
         /// </summary>
         public static string Fish {
@@ -705,15 +714,6 @@ namespace Loki.Properties {
         public static string Frost_arrow {
             get {
                 return ResourceManager.GetString("Frost arrow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to FrostMagic.
-        /// </summary>
-        public static string FrostMagic {
-            get {
-                return ResourceManager.GetString("FrostMagic", resourceCulture);
             }
         }
         

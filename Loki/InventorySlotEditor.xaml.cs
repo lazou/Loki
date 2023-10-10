@@ -26,7 +26,7 @@ namespace Loki
                 {
                     var customData = new List<(string, string)>();
                     slot.Item = new Item(itemData.ItemName, itemData.MaxStack, (float)itemData.MaxDurability, slot.Position,
-                        false, 1, 0, MainWindow.selectedPlayerProfile.PlayerId, MainWindow.selectedPlayerProfile.PlayerName, customData);
+                        false, 1, 0, MainWindow.selectedPlayerProfile.PlayerId, MainWindow.selectedPlayerProfile.PlayerName, customData, 0, false);
                 }
             }
         }

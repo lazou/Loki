@@ -15,6 +15,11 @@ namespace Loki
         public long PlayerId { get; set; }
         public string PlayerName { get; set; }
         public string StartSeed { get; set; }
+        public DateTime DateCreated { get; set; }
+        public bool UsedCheats { get; set; }
+        public Dictionary<string, float> KnownWorlds { get; set; }
+        public Dictionary<string, float> KnownWorldKeys { get; set; }
+        public Dictionary<string, float> KnownCommands { get; set; }
         public PlayerStats Stats { get; private set; }
         public Player Player { get; private set; }
         private List<(long, WorldPlayerData)> _worldData;
@@ -33,7 +38,16 @@ namespace Loki
                 throw new InvalidDataException("Character version is not compatible");
 
             var playerStats = new PlayerStats();
-            if (version >= 28)
+            // ToDo: if version != 38 "create backup"
+            if (version >= 38)
+            {
+                int statsCount = reader.ReadInt32();
+                for (int i = 0; i < statsCount; i++)
+                {
+                    playerStats[(PlayerStatType)i] = reader.ReadSingle();
+                }
+            }
+            else if (version >= 28)
             {
                 playerStats.Kills = reader.ReadInt32();
                 playerStats.Deaths = reader.ReadInt32();
@@ -58,10 +72,43 @@ namespace Loki
                         MapData = version >= 29 && reader.ReadBoolean() ? reader.ReadByteArray() : default,
                     }));
 
-            string playerName = reader.ReadString();
-            long playerId = reader.ReadInt64();
-            string startSeed = reader.ReadString();
+            string playerName = reader.ReadString(); // Used later
+            long playerId = reader.ReadInt64(); // Used later
+            string startSeed = reader.ReadString(); // Used later
 
+            bool usedCheats = default;
+            var knownWorlds = new Dictionary<string, float>();
+            var knownWorldKeys = new Dictionary<string, float>();
+            var knownCommands = new Dictionary<string, float>();
+            DateTime dateCreated;
+
+            if (version >= 38)
+            {
+                usedCheats = reader.ReadBoolean();
+                dateCreated = DateTimeOffset.FromUnixTimeSeconds(reader.ReadInt64()).Date;
+                int knownWorldsCount = reader.ReadInt32();
+
+                for (int i = 0; i < knownWorldsCount; i++)
+                {
+                    knownWorlds[reader.ReadString()] = reader.ReadSingle();
+                }
+                var knownWorldKeysCount = reader.ReadInt32();
+
+                for (int i = 0; i < knownWorldKeysCount; i++)
+                {
+                    knownWorldKeys[reader.ReadString()] = reader.ReadSingle();
+                }
+                var knownCommandsCount = reader.ReadInt32();
+
+                for (int i = 0; i < knownCommandsCount; i++)
+                {
+                    knownCommands[reader.ReadString()] = reader.ReadSingle();
+                }
+            }
+            else
+            {
+                dateCreated = new DateTime(2021, 2, 2);
+            }
             var player = reader.ReadBoolean() ? Player.Read(input, true) : default;
 
             // Verify we read all the data and haven't skipped anything.
@@ -74,8 +121,8 @@ namespace Loki
 
                 var result = MessageBox.Show(
                     $"{message}" + Environment.NewLine + Environment.NewLine +
-                    "Do you want to continue loading? (Not Recommended)", 
-                    $"Error reading {nameof(PlayerProfile)}", 
+                    "Do you want to continue loading? (Not Recommended)",
+                    $"Error reading {nameof(PlayerProfile)}",
                     MessageBoxButton.YesNo, MessageBoxImage.Warning);
 
                 if (result == MessageBoxResult.No)
@@ -90,6 +137,11 @@ namespace Loki
                 PlayerId = playerId,
                 PlayerName = playerName,
                 StartSeed = startSeed,
+                DateCreated = dateCreated,
+                UsedCheats = usedCheats,
+                KnownWorlds = knownWorlds,
+                KnownWorldKeys = knownWorldKeys,
+                KnownCommands = knownCommands,
                 _worldData = worldData,
                 Player = player,
             };
@@ -106,10 +158,13 @@ namespace Loki
             using var writer = new BinaryWriter(output, Encoding.UTF8, leaveOpen);
 
             writer.Write(Version.ProfileVersion);
-            writer.Write(Stats.Kills);
-            writer.Write(Stats.Deaths);
-            writer.Write(Stats.Crafts);
-            writer.Write(Stats.Builds);
+
+            var statsCount = Stats.Data.Count;
+            writer.Write(statsCount);
+            for (int i = 0; i < statsCount; i++)
+            {
+                writer.Write(Stats.Data[(PlayerStatType)i]);
+            }
 
             writer.Write(_worldData.Count);
             foreach (var (key, worldData) in _worldData)
@@ -129,6 +184,29 @@ namespace Loki
             writer.Write(PlayerName);
             writer.Write(PlayerId);
             writer.Write(StartSeed);
+            writer.Write(UsedCheats);
+            writer.Write(new DateTimeOffset(DateCreated).ToUnixTimeSeconds());
+
+            writer.Write(KnownWorlds.Count);
+            foreach (KeyValuePair<string, float> knownWorld in KnownWorlds)
+            {
+                writer.Write(knownWorld.Key);
+                writer.Write(knownWorld.Value);
+            }
+
+            writer.Write(KnownWorldKeys.Count);
+            foreach (KeyValuePair<string, float> knownWorldKey in KnownWorldKeys)
+            {
+                writer.Write(knownWorldKey.Key);
+                writer.Write(knownWorldKey.Value);
+            }
+
+            writer.Write(KnownCommands.Count);
+            foreach (KeyValuePair<string, float> knownCommand in KnownCommands)
+            {
+                writer.Write(knownCommand.Key);
+                writer.Write(knownCommand.Value);
+            }
 
             writer.Write(Player != null);
             if (Player != null)

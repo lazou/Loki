@@ -16,7 +16,7 @@ namespace Loki
     public class Player: INotifyPropertyChanged
     {
         private const int Version = 26;
-        private const int InventoryVersion = 104;
+        private const int InventoryVersion = 106;
         private const int SkillVersion = 2;
 
         private float _maxHealth;
@@ -328,6 +328,8 @@ namespace Loki
                     writer.Write(key);
                     writer.Write(value);
                 }
+                writer.Write(item.WorldLevel);
+                writer.Write(item.PickedUp);
             }
 
             writer.WriteCountItems(_knownRecipes);
@@ -345,8 +347,8 @@ namespace Loki
             writer.Write(_knownTexts.Count);
             foreach ((string key, string value) in _knownTexts)
             {
-                writer.Write(key);
-                writer.Write(value);
+                writer.Write(key.Replace("\u0016", ""));
+                writer.Write(value.Replace("\u0016", ""));
             }
 
             writer.Write(_beard);
@@ -389,28 +391,58 @@ namespace Loki
             var version = reader.ReadInt32();
             var itemCount = reader.ReadInt32();
             var items = new List<Item>(itemCount);
-            for (int i = 0; i < itemCount; i++)
+            if (version == 106)
             {
-                string name = reader.ReadString();
-                int stack = reader.ReadInt32();
-                float durability = reader.ReadSingle();
-                Vector2i pos = reader.ReadVector2i();
-                bool equiped = reader.ReadBoolean();
-                int quality = version >= 101 ? reader.ReadInt32() : 1;
-                int variant = version >= 102 ? reader.ReadInt32() : 0;
-                (long crafterId, string crafterName) =
-                    version >= 103 ? (reader.ReadInt64(), reader.ReadString()) : (0, string.Empty);
-                var itemData = new List<(string, string)>();
-                if (version >= 104)
+                for (int i = 0; i < itemCount; i++)
                 {
+                    string name = reader.ReadString();
+                    int stack = reader.ReadInt32();
+                    float durability = reader.ReadSingle();
+                    Vector2i pos = reader.ReadVector2i();
+                    bool equipped = reader.ReadBoolean();
+                    int quality = reader.ReadInt32();
+                    int variant = reader.ReadInt32();
+                    long crafterId = reader.ReadInt64();
+                    string crafterName = reader.ReadString();
+                    var itemData = new List<(string, string)>();
                     var itemDataCount = reader.ReadInt32();
                     for (int j = 0; j < itemDataCount; j++)
                     {
                         itemData.Add((reader.ReadString(), reader.ReadString()));
                     }
+                    int worldLevel = reader.ReadInt32();
+                    bool pickedUp = reader.ReadBoolean();
+                    Debug.WriteLine($"ReadInv: Item={name}, Position={pos}");
+                    if (name != "") items.Add(new Item(name, stack, durability, pos, equipped, quality, variant, crafterId, crafterName, itemData, worldLevel, pickedUp));
                 }
-                Debug.WriteLine($"ReadInv: Item={name}, Position={pos}");
-                if(name != "") items.Add(new Item(name, stack, durability, pos, equiped, quality, variant, crafterId, crafterName, itemData));
+            }
+            else
+            {
+                for (int i = 0; i < itemCount; i++)
+                {
+                    string name = reader.ReadString();
+                    int stack = reader.ReadInt32();
+                    float durability = reader.ReadSingle();
+                    Vector2i pos = reader.ReadVector2i();
+                    bool equipped = reader.ReadBoolean();
+                    int quality = version >= 101 ? reader.ReadInt32() : 1;
+                    int variant = version >= 102 ? reader.ReadInt32() : 0;
+                    (long crafterId, string crafterName) =
+                        version >= 103 ? (reader.ReadInt64(), reader.ReadString()) : (0, string.Empty);
+                    var itemData = new List<(string, string)>();
+                    if (version >= 104)
+                    {
+                        var itemDataCount = reader.ReadInt32();
+                        for (int j = 0; j < itemDataCount; j++)
+                        {
+                            itemData.Add((reader.ReadString(), reader.ReadString()));
+                        }
+                    }
+                    Debug.WriteLine($"ReadInv: Item={name}, Position={pos}");
+                    int worldLevel = version >= 105 ? reader.ReadInt32() : 0;
+                    bool pickedUp = version >= 106 ? reader.ReadBoolean() : false;
+                    if (name != "") items.Add(new Item(name, stack, durability, pos, equipped, quality, variant, crafterId, crafterName, itemData, worldLevel, pickedUp));
+                }
             }
             return items;
         }
