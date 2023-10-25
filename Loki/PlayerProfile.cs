@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
@@ -38,21 +40,22 @@ namespace Loki
                 throw new InvalidDataException("Character version is not compatible");
 
             var playerStats = new PlayerStats();
-            // ToDo: if version != 38 "create backup"
+
+            // ToDo: if version != 38 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
             if (version >= 38)
             {
                 int statsCount = reader.ReadInt32();
                 for (int i = 0; i < statsCount; i++)
                 {
-                    playerStats[(PlayerStatType)i] = reader.ReadSingle();
+                    playerStats[(PlayerStatType)i] = reader.ReadSingle();                    
                 }
             }
             else if (version >= 28)
             {
-                playerStats.Kills = reader.ReadInt32();
-                playerStats.Deaths = reader.ReadInt32();
-                playerStats.Crafts = reader.ReadInt32();
-                playerStats.Builds = reader.ReadInt32();
+                playerStats[PlayerStatType.EnemyKills] = reader.ReadInt32();
+                playerStats[PlayerStatType.Deaths] = reader.ReadInt32();
+                playerStats[PlayerStatType.CraftsOrUpgrades] = reader.ReadInt32();
+                playerStats[PlayerStatType.Builds] = reader.ReadInt32();
             }
 
             int worldCount = reader.ReadInt32();
@@ -159,11 +162,10 @@ namespace Loki
 
             writer.Write(Version.ProfileVersion);
 
-            var statsCount = Stats.Data.Count;
-            writer.Write(statsCount);
-            for (int i = 0; i < statsCount; i++)
+            writer.Write(Stats.Count);
+            for (int i = 0; i < Stats.Count; i++)
             {
-                writer.Write(Stats.Data[(PlayerStatType)i]);
+                writer.Write(Stats[(PlayerStatType)i]);
             }
 
             writer.Write(_worldData.Count);

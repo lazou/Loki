@@ -189,6 +189,44 @@ namespace Loki
             SaveProfile(SelectedCharacterFile);
         }
 
+        private void CanRepairInventoryItemsExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Inventory.Slots.Any(slot => slot.RepairItem.CanExecute(null));
+        }
+
+        private void RepairInventoryItemsExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            int count = 0;
+            Profile?.Player.Inventory.Slots.ForEach(slot =>
+            {
+                if (slot.RepairItem.CanExecute(null))
+                {
+                    slot.RepairItem.Execute(null);
+                    count++;
+                }
+            });
+            ShowNotification($"Repaired {count} items");
+        }
+
+        private void CanFillInventoryStacksExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Inventory.Slots.Any(slot => slot.FillStack.CanExecute(null));
+        }
+
+        private void FillInventoryStacksExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            int count = 0;
+            Profile?.Player.Inventory.Slots.ForEach(slot =>
+            {
+                if (slot.FillStack.CanExecute(null))
+                {
+                    slot.FillStack.Execute(null);
+                    count++;
+                }
+            });
+            ShowNotification($"Filled {count} stacks");
+        }
+
         private void ItemPickerItemMouseMove(object sender, MouseEventArgs e)
         {
             if(sender is FrameworkElement element && e.LeftButton == MouseButtonState.Pressed)
@@ -246,6 +284,33 @@ namespace Loki
                 e.Accepted = filterItems.Any(filterItem =>
                     item.Name.Contains(filterItem, StringComparison.OrdinalIgnoreCase));
             }
+        }
+
+        private void ModifyAllSkillsSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            ModifyAllSkillsText.Text = $"{(e.NewValue > 0 ? "+" : "")}{e.NewValue:F0}%";
+            ModifyAllSkillsButton.IsEnabled = e.NewValue != 0d;
+        }
+
+        private void ModifyAllSkillsReset_Clicked(object sender, RoutedEventArgs e)
+        {
+            ModifyAllSkillsSlider.Value = 5;
+        }
+
+        private void ModifyAllSkillsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var percent = (float)ModifyAllSkillsSlider.Value;
+            var factor = 1f + 0.01f * percent;
+            var count = 0;
+            foreach (var skill in Profile.Player.Skills)
+            {
+                if (skill.Level > 0f)
+                {
+                    skill.Level *= factor;
+                    count++;
+                }
+            }
+            ShowNotification($"{count} skills {(percent < 0f ? "decreased" : "increased")} {percent:f0}%");
         }
     }
 }
