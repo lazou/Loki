@@ -5,8 +5,8 @@
 
 _If using a custom release from this fork, read the release notes carefully first._
 
-__Credits to Wuffles for this app.__ 
-(I just followed along the ride for a while, as a result of curiousity about Valheim/Unity internal workings more than anything. WPF is not my cup of tea and a bit away from my comfort zone to be honest).
+__Credits to Wufflez for this app.__ 
+(I just followed along the ride for a while, as a result of curiousity about Valheim/Unity internal workings more than anything else. WPF is not my cup of tea and a bit away from my comfort zone to be honest).
 
 # Loki - Valheim Character Editor
 
