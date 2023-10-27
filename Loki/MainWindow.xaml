@@ -279,7 +279,7 @@
                                 ToolTip="Repair all items with durability not at max" >
                                 <StackPanel Orientation="Horizontal">
                                     <Image Grid.Column="0" Margin="4,4,4,4" Source="Resources/wrench-32.ico" />
-                                    <Label Grid.Column="1" Content="{x:Static prop:Resources.Repair_items}" />
+                                    <Label Grid.Column="1" Content="{x:Static prop:Resources.Repair_items}" Padding="5,0,5,0" VerticalContentAlignment="Center" />
                                 </StackPanel>
                             </Button>
                             <Button 
@@ -291,7 +291,7 @@
                                         Grid.Column="0" Width="8" Height="8" Margin="4,4,4,4" Stretch="Fill" 
                                         Stroke="Green" StrokeThickness="4" StrokeEndLineCap="Round" StrokeStartLineCap="Round" 
                                         Data="M 50,5 95,97.5 5,97.5 z" />
-                                    <Label Grid.Column="1" Content="{x:Static prop:Resources.Fill_stacks}" />
+                                    <Label Grid.Column="1" Content="{x:Static prop:Resources.Fill_stacks}" Padding="5,0,5,0" VerticalContentAlignment="Center" />
                                 </StackPanel>
                             </Button>
                         </Grid>

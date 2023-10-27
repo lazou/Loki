@@ -1,3 +1,13 @@
+# NOTE: This is a fork of the official repo
+- Updates here have not been pulled to official repo (mainly due to inactivity there)
+- Updates here focus primarily on maintaining compability with Valheim 
+- Any requests or questions should be in official repo
+
+_If using a custom release from this fork, read the release notes carefully first._
+
+__Credits to Wuffles for this app.__ 
+(I just followed along the ride for a while, as a result of curiousity about Valheim/Unity internal workings more than anything. WPF is not my cup of tea and a bit away from my comfort zone to be honest).
+
 # Loki - Valheim Character Editor
 
 This program allows editing the character files for the game Valheim (.fch)
