@@ -4,12 +4,12 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Data;
 using System.Windows;
+using System.Windows.Data;
 
 namespace Loki
 {
-    public class EnumConverter : IValueConverter
+    public class BoolToLocalizedTextConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -18,16 +18,12 @@ namespace Loki
                 return null;
             }
 
-            if (targetType.IsEnum)
+            if (value is bool boolValue)
             {
-                // int -> Enum
-                return Enum.ToObject(targetType, value);
-            }
-
-            if (value.GetType().IsEnum)
-            {
-                // Enum -> int
-                return System.Convert.ChangeType(value, Enum.GetUnderlyingType(value.GetType()));
+                var localizedText = boolValue  
+                    ? Loki.Properties.Resources.BoolTrueText 
+                    : Loki.Properties.Resources.BoolFalseText;
+                return localizedText ?? value.ToString();
             }
 
             return null;
@@ -35,8 +31,7 @@ namespace Loki
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            // Same conversion for both directions
-            return Convert(value, targetType, parameter, culture);
+            throw new NotImplementedException();
         }
     }
 }

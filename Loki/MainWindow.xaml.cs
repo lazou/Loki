@@ -151,7 +151,7 @@ namespace Loki
                 });
 
                 character.PlayerName = Profile.PlayerName;
-                ShowNotification("Character Saved");
+                ShowNotification(Loki.Properties.Resources.Character_Saved);
             }
             catch (Exception ex)
             {
@@ -181,12 +181,37 @@ namespace Loki
         private void RevertExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             LoadProfile(SelectedCharacterFile);
-            ShowNotification("Character Reverted");
+            ShowNotification(Loki.Properties.Resources.Character_Reverted);
         }
 
         private void SaveExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             SaveProfile(SelectedCharacterFile);
+        }
+
+        private void CanModifyAllSkillsExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Skills.Count > 0;
+        }
+
+        private void ModifyAllSkillsExecuted(Object sender, ExecutedRoutedEventArgs e)
+        {
+            var percent = (float)ModifyAllSkillsSlider.Value;
+            var factor = 1f + 0.01f * percent;
+            var count = 0;
+            foreach (var skill in Profile.Player.Skills)
+            {
+                if (skill.Level > 0f)
+                {
+                    skill.Level *= factor;
+                    count++;
+                }
+            }
+
+            var textToFormat = percent < 0f
+                ? Loki.Properties.Resources._0__skills_decreased__1__percent
+                : Loki.Properties.Resources._0__skills_increased__1__percent;
+            ShowNotification(string.Format(textToFormat, count, percent.ToString("+0;-#")));
         }
 
         private void CanRepairInventoryItemsExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -205,7 +230,7 @@ namespace Loki
                     count++;
                 }
             });
-            ShowNotification($"Repaired {count} items");
+            ShowNotification(string.Format(Loki.Properties.Resources.Repaired__0__items, count));
         }
 
         private void CanFillInventoryStacksExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -224,7 +249,7 @@ namespace Loki
                     count++;
                 }
             });
-            ShowNotification($"Filled {count} stacks");
+            ShowNotification(string.Format(Loki.Properties.Resources.Filled__0__stacks, count));
         }
 
         private void ItemPickerItemMouseMove(object sender, MouseEventArgs e)
@@ -295,22 +320,6 @@ namespace Loki
         private void ModifyAllSkillsReset_Clicked(object sender, RoutedEventArgs e)
         {
             ModifyAllSkillsSlider.Value = 5;
-        }
-
-        private void ModifyAllSkillsButton_Click(object sender, RoutedEventArgs e)
-        {
-            var percent = (float)ModifyAllSkillsSlider.Value;
-            var factor = 1f + 0.01f * percent;
-            var count = 0;
-            foreach (var skill in Profile.Player.Skills)
-            {
-                if (skill.Level > 0f)
-                {
-                    skill.Level *= factor;
-                    count++;
-                }
-            }
-            ShowNotification($"{count} skills {(percent < 0f ? "decreased" : "increased")} {percent:f0}%");
         }
     }
 }
