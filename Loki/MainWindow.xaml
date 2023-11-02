@@ -172,7 +172,7 @@
                     <xctk:ColorPicker Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left"
                                       UsingAlphaChannel="False" ShowStandardColors="False"
                                       SelectedColor="{Binding Profile.Player.HairColour}"/>
-                    <TextBlock FontStyle="Italic" Grid.Column="3" Grid.Row="5" VerticalAlignment="Center" Margin="6" 
+                    <TextBlock FontStyle="Italic" Grid.Column="2" Grid.Row="5" VerticalAlignment="Center" Margin="6" 
                                Text="{Binding Profile.Player.RawHairRgb}" Foreground="Gray"/>
 
                     <!-- Skin Colour -->
@@ -180,7 +180,7 @@
                     <xctk:ColorPicker Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left"
                                       UsingAlphaChannel="False" ShowStandardColors="False"
                                       SelectedColor="{Binding Profile.Player.SkinColour}"/>
-                    <TextBlock FontStyle="Italic" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center" Margin="6" 
+                    <TextBlock FontStyle="Italic" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" Margin="6" 
                                Text="{Binding Profile.Player.RawSkinRgb}" Foreground="Gray"/>
 
                     <!-- Experimental Skin Colour overdrive for radiant God mode -->
@@ -190,7 +190,7 @@
 
                     <TextBlock 
                         FontStyle="Italic" Foreground="Gray"
-                        Grid.Column="3" Grid.Row="7" VerticalAlignment="Center" Margin="6" Text="Experimental! Scales colour for godly radiance"/>
+                        Grid.Column="2" Grid.Row="7" VerticalAlignment="Center" Margin="6" Text="Experimental! Scales colour for godly radiance"/>
 
                     <!-- Player model selection -->
                     <TextBlock Grid.Column="0" Grid.Row="8" VerticalAlignment="Center" Margin="6" Text="{x:Static prop:Resources.Model}"/>
