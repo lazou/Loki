@@ -348,6 +348,9 @@
   <data name="Fish" xml:space="preserve">
     <value>Fish</value>
   </data>
+  <data name="Fishing" xml:space="preserve">
+    <value>Fishing</value>
+  </data>
   <data name="Flint axe" xml:space="preserve">
     <value>Flint axe</value>
   </data>

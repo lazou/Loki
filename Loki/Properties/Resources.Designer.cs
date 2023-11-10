@@ -772,6 +772,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fishing.
+        /// </summary>
+        public static string Fishing {
+            get {
+                return ResourceManager.GetString("Fishing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Flint axe.
         /// </summary>
         public static string Flint_axe {

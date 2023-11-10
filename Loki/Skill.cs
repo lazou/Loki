@@ -42,6 +42,7 @@ namespace Loki
                     SkillType.Run => Properties.Resources.Run,
                     SkillType.Swim => Properties.Resources.Swim,
                     SkillType.Ride => Properties.Resources.Riding,
+                    SkillType.Fishing => Properties.Resources.Fishing,
                     SkillType.All => Properties.Resources.All,
                     //_ => throw new ArgumentOutOfRangeException(nameof(type), type, "Unrecognised skill type"),
                     _ => Properties.Resources.Unknown,
