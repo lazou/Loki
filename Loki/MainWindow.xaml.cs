@@ -26,6 +26,8 @@ namespace Loki
 
         public static PlayerProfile selectedPlayerProfile = null;
 
+        private static CharacterFile[] characterFiles;
+
         private async void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
             var version = Assembly.GetExecutingAssembly().GetName().Version;
@@ -34,14 +36,27 @@ namespace Loki
 
             try
             {
-                CharacterFiles = await Task.Run(CharacterFile.LoadCharacterFiles);
-                SelectedCharacterFile = CharacterFiles.FirstOrDefault();
+                characterFiles = await Task.Run(CharacterFile.LoadCharacterFiles);
+                RefreshCharacterFiles((bool)ChkLoadBackupFiles.IsChecked);
                 CommandManager.InvalidateRequerySuggested();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void RefreshCharacterFiles(bool loadBackups)
+        {
+            if (loadBackups)
+            {
+                CharacterFiles = characterFiles;
+            }
+            else
+            {
+                CharacterFiles = characterFiles.Where(f => !f.FilePath.Contains("backup", StringComparison.InvariantCultureIgnoreCase)).ToArray();                
+            }
+            SelectedCharacterFile = CharacterFiles.FirstOrDefault();
         }
 
         public static readonly DependencyProperty ProfileProperty = DependencyProperty.Register(
@@ -320,6 +335,16 @@ namespace Loki
         private void ModifyAllSkillsReset_Clicked(object sender, RoutedEventArgs e)
         {
             ModifyAllSkillsSlider.Value = 5;
+        }
+
+        private void ChkLoadBackupFiles_Checked(object sender, RoutedEventArgs e)
+        {
+            RefreshCharacterFiles(true);
+        }
+
+        private void ChkLoadBackupFiles_Unchecked(object sender, RoutedEventArgs e)
+        {
+            RefreshCharacterFiles(false);
         }
     }
 }

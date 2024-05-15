@@ -1,78 +1,97 @@
 ItemName,IsTeleportable,UsesDurability,MaxDurability,DurabilityPerLevel,MaxStack,DisplayName,MaxQuality,ItemType
 Acorn,True,False,100,50,100,Acorns,1,1
+AmberPearl,True,False,100,50,50,Amber Pearl,1,1
 Amber,True,False,100,50,20,Amber,1,1
-AmberPearl,True,False,100,50,50,Amber pearl,1,1
-AncientSeed,True,False,100,50,50,Ancient seed,1,1
-ArmorBronzeChest,True,True,1000,200,1,Bronze plate cuirass,4,7
-ArmorBronzeLegs,True,True,1000,200,1,Bronze plate leggings,4,11
-ArmorCarapaceChest,True,True,1200,200,1,Carapace breastplate,4,7
-ArmorCarapaceLegs,True,True,1200,200,1,Carapace greaves,4,11
-ArmorDress1,True,True,1000,200,1,Simple dress brown,4,7
-ArmorDress10,True,True,1000,200,1,Simple dress natural,4,7
-ArmorDress2,True,True,1000,200,1,Shawl dress brown,4,7
-ArmorDress3,True,True,1000,200,1,Beaded dress brown,4,7
-ArmorDress4,True,True,1000,200,1,Simple dress blue,4,7
-ArmorDress5,True,True,1000,200,1,Shawl dress blue,4,7
-ArmorDress6,True,True,1000,200,1,Beaded dress blue,4,7
-ArmorDress7,True,True,1000,200,1,Simple dress yellow,4,7
-ArmorDress8,True,True,1000,200,1,Shawl dress yellow,4,7
-ArmorDress9,True,True,1000,200,1,Beaded dress yellow,4,7
-ArmorFenringChest,True,True,1000,200,1,Fenris coat,4,7
-ArmorFenringLegs,True,True,1000,200,1,Fenris leggings,4,11
-ArmorIronChest,True,True,1000,200,1,Iron scale mail,4,7
-ArmorIronLegs,True,True,1000,200,1,Iron greaves,4,11
-ArmorLeatherChest,True,True,400,100,1,Leather tunic,4,7
-ArmorLeatherLegs,True,True,400,100,1,Leather pants,4,11
-ArmorMageChest,True,True,1000,200,1,Eitr-weave robe,4,7
-ArmorMageLegs,True,True,1000,200,1,Eitr-weave trousers,4,11
-ArmorPaddedCuirass,True,True,1000,200,1,Padded cuirass,4,7
-ArmorPaddedGreaves,True,True,1000,200,1,Padded greaves,4,11
-ArmorRagsChest,True,True,200,50,1,Rag tunic,2,7
-ArmorRagsLegs,True,True,200,50,1,Rag pants,2,11
-ArmorRootChest,True,True,800,100,1,Root harnesk,4,7
-ArmorRootLegs,True,True,800,100,1,Root leggings,4,11
-ArmorTrollLeatherChest,True,True,500,200,1,Troll leather tunic,4,7
-ArmorTrollLeatherLegs,True,True,500,200,1,Troll leather pants,4,11
-ArmorTunic1,True,True,1000,200,1,Simple tunic blue,4,7
-ArmorTunic10,True,True,1000,200,1,Simple tunic natural,4,7
-ArmorTunic2,True,True,1000,200,1,Cape tunic blue,4,7
-ArmorTunic3,True,True,1000,200,1,Beaded tunic blue,4,7
-ArmorTunic4,True,True,1000,200,1,Simple tunic red,4,7
-ArmorTunic5,True,True,1000,200,1,Cape tunic red,4,7
-ArmorTunic6,True,True,1000,200,1,Beaded red tunic,4,7
-ArmorTunic7,True,True,1000,200,1,Simple tunic yellow,4,7
-ArmorTunic8,True,True,1000,200,1,Cape tunic yellow,4,7
-ArmorTunic9,True,True,1000,200,1,Beaded tunic yellow,4,7
-ArmorWolfChest,True,True,1000,200,1,Wolf armor chest,4,7
-ArmorWolfLegs,True,True,1000,200,1,Wolf armor legs,4,11
-ArrowBronze,True,False,100,50,100,Bronzehead arrow,1,9
-ArrowCarapace,True,False,100,50,100,Carapace arrow,1,9
-ArrowFire,True,False,100,50,100,Fire arrow,1,9
-ArrowFlint,True,False,100,50,100,Flinthead arrow,1,9
-ArrowFrost,True,False,100,50,100,Frost arrow,1,9
-ArrowIron,True,False,100,50,100,Ironhead arrow,1,9
-ArrowNeedle,True,False,100,50,100,Needle arrow,1,9
-ArrowObsidian,True,False,100,50,100,Obsidian arrow,1,9
-ArrowPoison,True,False,100,50,100,Poison arrow,1,9
-ArrowSilver,True,False,100,50,100,Silver arrow,1,9
-ArrowWood,True,False,100,50,100,Wood arrow,1,9
-AtgeirBlackmetal,True,True,175,50,1,Blackmetal atgeir,4,14
-AtgeirBronze,True,True,125,50,1,Bronze atgeir,4,14
+AncientSeed,True,False,100,50,50,Ancient Seed,1,1
+ArmorAshlandsMediumChest,True,True,1000,200,1,Breastplate of Ask,4,7
+ArmorAshlandsMediumlegs,True,True,1000,200,1,Trousers of Ask,4,11
+ArmorBronzeChest,True,True,1000,200,1,Bronze Plate Tunic,4,7
+ArmorBronzeLegs,True,True,1000,200,1,Bronze plate Leggings,4,11
+ArmorCarapaceChest,True,True,1200,200,1,Carapace Breastplate,4,7
+ArmorCarapaceLegs,True,True,1200,200,1,Carapace Greaves,4,11
+ArmorDress1,True,True,1000,200,1,Simple Dress Brown,4,7
+ArmorDress10,True,True,1000,200,1,Simple Dress Natural,4,7
+ArmorDress2,True,True,1000,200,1,Shawl Dress Brown,4,7
+ArmorDress3,True,True,1000,200,1,Beaded Dress Brown,4,7
+ArmorDress4,True,True,1000,200,1,Simple Dress Blue,4,7
+ArmorDress5,True,True,1000,200,1,Shawl Dress Blue,4,7
+ArmorDress6,True,True,1000,200,1,Beaded Dress Blue,4,7
+ArmorDress7,True,True,1000,200,1,Simple Dress yellow,4,7
+ArmorDress8,True,True,1000,200,1,Shawl Dress Yellow,4,7
+ArmorDress9,True,True,1000,200,1,Beaded Dress Yellow,4,7
+ArmorFenringChest,True,True,1000,200,1,Fenris Coat,4,7
+ArmorFenringLegs,True,True,1000,200,1,Fenris Leggings,4,11
+ArmorFlametalChest,True,True,1000,200,1,Flametal Breastplate,4,7
+ArmorFlametalLegs,True,True,1000,200,1,Flametal Greaves,4,11
+ArmorIronChest,True,True,1000,200,1,Iron Scale Mail,4,7
+ArmorIronLegs,True,True,1000,200,1,Iron Greaves,4,11
+ArmorLeatherChest,True,True,400,100,1,Leather Tunic,4,7
+ArmorLeatherLegs,True,True,400,100,1,Leather Trousers,4,11
+ArmorMageChest,True,True,1000,200,1,Eitr-weave Robe,4,7
+ArmorMageChest_Ashlands,True,True,1000,200,1,Robes of Embla,4,7
+ArmorMageLegs,True,True,1000,200,1,Eitr-weave Trousers,4,11
+ArmorMageLegs_Ashlands,True,True,1000,200,1,Trousers of Embla,4,11
+ArmorPaddedCuirass,True,True,1000,200,1,Padded Cuirass,4,7
+ArmorPaddedGreaves,True,True,1000,200,1,Padded Greaves,4,11
+ArmorRagsChest,True,True,200,50,1,Rag Tunic,2,7
+ArmorRagsLegs,True,True,200,50,1,Rag Trousers,2,11
+ArmorRootChest,True,True,800,100,1,Root Harnesk,4,7
+ArmorRootLegs,True,True,800,100,1,Root Leggings,4,11
+ArmorTrollLeatherChest,True,True,500,200,1,Troll Leather Tunic,4,7
+ArmorTrollLeatherLegs,True,True,500,200,1,Troll Leather Trousers,4,11
+ArmorTunic1,True,True,1000,200,1,Simple Tunic Blue,4,7
+ArmorTunic10,True,True,1000,200,1,Simple Tunic Natural,4,7
+ArmorTunic2,True,True,1000,200,1,Cape Tunic Blue,4,7
+ArmorTunic3,True,True,1000,200,1,Beaded Tunic Blue,4,7
+ArmorTunic4,True,True,1000,200,1,Simple Tunic Red,4,7
+ArmorTunic5,True,True,1000,200,1,Cape Tunic Red,4,7
+ArmorTunic6,True,True,1000,200,1,Beaded Tunic Red,4,7
+ArmorTunic7,True,True,1000,200,1,Simple Tunic Yellow,4,7
+ArmorTunic8,True,True,1000,200,1,Cape Tunic Yellow,4,7
+ArmorTunic9,True,True,1000,200,1,Beaded Tunic Yellow,4,7
+ArmorWolfChest,True,True,1000,200,1,Wolf Hide Chestpiece,4,7
+ArmorWolfLegs,True,True,1000,200,1,Wolf Hide Trousers,4,11
+ArrowBronze,True,False,100,50,100,Bronzehead Arrow,1,9
+ArrowCarapace,True,False,100,50,100,Carapace Arrow,1,9
+ArrowCharred,True,False,100,50,100,Charred Arrow,1,9
+ArrowFire,True,False,100,50,100,Fire Arrow,1,9
+ArrowFlint,True,False,100,50,100,Flinthead Arrow,1,9
+ArrowFrost,True,False,100,50,100,Frost Arrow,1,9
+ArrowIron,True,False,100,50,100,Ironhead Arrow,1,9
+ArrowNeedle,True,False,100,50,100,Needle Arrow,1,9
+ArrowObsidian,True,False,100,50,100,Obsidian Arrow,1,9
+ArrowPoison,True,False,100,50,100,Poison Arrow,1,9
+ArrowSilver,True,False,100,50,100,Silver Arrow,1,9
+ArrowWood,True,False,100,50,100,Wood Arrow,1,9
+AskBladder,True,False,100,50,50,Asksvin Bladder,1,1
+AskHide,True,False,100,50,50,Asksvin Hide,1,1
+AsksvinCarrionNeck,True,False,100,50,50,Asksvin Neck,1,1
+AsksvinCarrionPelvic,True,False,100,50,50,Asksvin Pelvis,1,1
+AsksvinCarrionRibcage,True,False,100,50,50,Asksvin Ribcage,1,1
+AsksvinCarrionSkull,True,False,100,50,50,Asksvin Skull,1,1
+AsksvinEgg,True,False,100,50,20,Asksvin Egg,4,16
+AsksvinMeat,True,False,100,50,20,Asksvin Tail,1,1
+AtgeirBlackmetal,True,True,175,50,1,Black Metal Atgeir,4,14
+AtgeirBronze,True,True,125,50,1,Bronze Atgeir,4,14
 AtgeirHimminAfl,True,True,175,50,1,Himminafl,4,14
-AtgeirIron,True,True,175,50,1,Iron atgeir,4,14
-AxeBlackMetal,True,True,175,50,1,Blackmetal axe,4,3
-AxeBronze,True,True,125,50,1,Bronze axe,4,3
-AxeFlint,True,True,100,30,1,Flint axe,4,3
-AxeIron,True,True,175,50,1,Iron axe,4,3
+AtgeirIron,True,True,175,50,1,Iron Atgeir,4,14
+AxeBerzerkr,True,True,175,50,1,Berserkir Axes,4,14
+AxeBerzerkrBlood,True,True,175,50,1,Bleeding Berserkir Axes,4,14
+AxeBerzerkrLightning,True,True,175,50,1,Thundering Berserkir Axes,4,14
+AxeBerzerkrNature,True,True,175,50,1,Primal Berserkir Axes,4,14
+AxeBlackMetal,True,True,175,50,1,Black Metal Axe,4,3
+AxeBronze,True,True,125,50,1,Bronze Axe,4,3
+AxeFlint,True,True,100,30,1,Flint Axe,4,3
+AxeIron,True,True,175,50,1,Iron Axe,4,3
 AxeJotunBane,True,True,175,50,1,Jotun Bane,4,3
-AxeStone,True,True,100,30,1,Stone axe,4,3
-BarberKit,True,False,100,50,1,Barber kit,1,16
+AxeStone,True,True,100,30,1,Stone Axe,4,3
+BarberKit,True,False,100,50,1,Barber Kit,1,16
+BarleyFlour,True,False,100,50,20,Barley Flour,1,1
+BarleyWine,True,False,100,50,10,Fire Resistance Barley Wine,1,2
+BarleyWineBase,True,False,100,50,1,Barley Wine Base: Fire Resistance,1,1
 Barley,True,False,100,50,100,Barley,1,1
-BarleyFlour,True,False,100,50,20,Barley flour,1,1
-BarleyWine,True,False,100,50,10,Fire resistance barley wine,1,2
-BarleyWineBase,True,False,100,50,1,Barley wine base: Fire resistance,1,1
 Battleaxe,True,True,200,50,1,Battleaxe,4,14
-BattleaxeCrystal,True,True,200,50,1,Crystal battleaxe,4,14
+BattleaxeCrystal,True,True,200,50,1,Crystal Battleaxe,4,14
 Beard1,True,False,100,50,1,Long 1,1,10
 Beard10,True,False,100,50,1,Braided 4,1,10
 Beard11,True,False,100,50,1,Thick 2,1,10
@@ -94,141 +113,193 @@ Beard6,True,False,100,50,1,Braided 2,1,10
 Beard7,True,False,100,50,1,Short 3,1,10
 Beard8,True,False,100,50,1,Thick 1,1,10
 Beard9,True,False,100,50,1,Braided 3,1,10
-BeardNone,True,False,100,50,1,No beard,1,10
-BeechSeeds,True,False,100,50,100,Beech seeds,1,1
+BeardNone,True,False,100,50,1,No Beard,1,10
+BeechSeeds,True,False,100,50,100,Beech Seeds,1,1
+Bell,True,False,100,50,9,Bell,1,16
+BellFragment,True,False,100,50,9,Bell Fragment,1,1
 BeltStrength,True,False,100,50,1,Megingjord,1,18
 Bilebag,True,False,100,50,50,Bilebag,1,1
-BirchSeeds,True,False,100,50,100,Birch seeds,1,1
-BlackCore,True,False,100,50,20,Black core,1,1
-BlackMarble,True,False,100,50,50,Black marble,1,1
-BlackMetal,False,False,100,50,30,Black metal,1,1
-BlackMetalScrap,False,False,100,50,30,Black metal scrap,1,1
-BlackSoup,True,False,100,50,10,Black soup,1,2
+BirchSeeds,True,False,100,50,100,Birch Seeds,1,1
+BlackCore,True,False,100,50,20,Black Core,1,1
+BlackMarble,True,False,100,50,50,Black Marble,1,1
+BlackMetal,False,False,100,50,30,Black Metal,1,1
+BlackMetalScrap,False,False,100,50,30,Black Metal Scrap,1,1
+BlackSoup,True,False,100,50,10,Black Soup,1,2
+Blackwood,True,False,100,50,50,Ashwood,1,1
 Bloodbag,True,False,100,50,50,Bloodbag,1,1
-BloodPudding,True,False,100,50,10,Blood pudding,1,2
+BloodPudding,True,False,100,50,10,Blood Pudding,1,2
 Blueberries,True,False,100,50,50,Blueberries,1,2
-BoarJerky,True,False,100,50,20,Boar jerky,1,2
-BoltBlackmetal,True,False,100,50,100,Blackmetal bolt,1,9
-BoltBone,True,False,100,50,100,Bone bolt,1,9
-BoltCarapace,True,False,100,50,100,Carapace bolt,1,9
-BoltIron,True,False,100,50,100,Iron bolt,1,9
-BombBile,True,False,100,50,50,Bile bomb,1,3
-BombOoze,True,False,100,50,50,Ooze bomb,1,3
-BoneFragments,True,False,100,50,50,Bone fragments,1,1
-Bow,True,True,50,50,1,Crude bow,4,4
-BowDraugrFang,True,True,100,50,1,Draugr fang,4,4
-BowFineWood,True,True,100,50,1,Finewood bow,4,4
-BowHuntsman,True,True,100,50,1,Huntsman bow,4,4
+BoarJerky,True,False,100,50,20,Boar Jerky,1,2
+BoltBlackmetal,True,False,100,50,100,Blackmetal Bolt,1,9
+BoltBone,True,False,100,50,100,Bone Bolt,1,9
+BoltCarapace,True,False,100,50,100,Carapace Bolt,1,9
+BoltCharred,True,False,100,50,100,Charred Bolt,1,9
+BoltIron,True,False,100,50,100,Iron Bolt,1,9
+BombBile,True,False,100,50,50,Bile Bomb,1,3
+BombLava,True,False,100,50,50,Basalt Bomb,1,3
+BombOoze,True,False,100,50,50,Ooze Bomb,1,3
+BombSiege,True,False,100,50,50,Explosive Payload,1,1
+BombSmoke,True,False,100,50,50,Smoke Bomb,1,3
+BoneFragments,True,False,100,50,50,Bone Fragments,1,1
+BoneMawSerpentMeat,True,False,100,50,50,Bonemaw Meat,1,1
+BonemawSerpentScale,True,False,100,50,50,Bonemaw Scale,1,1
+BonemawSerpentTooth,True,False,100,50,50,Bonemaw Tooth,1,1
+BowAshlands,True,True,100,50,1,Ashlands Bow,4,4
+BowAshlandsBlood,True,True,100,50,1,Blood Fang,4,4
+BowAshlandsRoot,True,True,100,50,1,Root Fang,4,4
+BowAshlandsStorm,True,True,100,50,1,Storm Fang,4,4
+BowDraugrFang,True,True,100,50,1,Draugr Fang,4,4
+BowFineWood,True,True,100,50,1,Finewood Bow,4,4
+BowHuntsman,True,True,100,50,1,Huntsman Bow,4,4
 BowSpineSnap,True,True,100,50,1,Spinesnap,4,4
+Bow,True,True,50,50,1,Crude Bow,4,4
+BreadDough,True,False,100,50,20,Bread Dough,1,1
 Bread,True,False,100,50,20,Bread,1,2
-BreadDough,True,False,100,50,20,Bread dough,1,1
 Bronze,False,False,100,50,30,Bronze,1,1
-BronzeNails,True,False,100,50,100,Bronze nails,1,1
-BronzeScrap,False,False,100,50,30,Scrap bronze,1,1
-BugMeat,True,False,100,50,20,Seeker meat,1,1
-CapeDeerHide,True,True,400,50,1,Deer hide cape,4,17
-CapeFeather,True,True,1200,50,1,Feather cape,4,17
-CapeLinen,True,True,1500,50,1,Linen cape,4,17
-CapeLox,True,True,1200,50,1,Lox cape,4,17
+BronzeNails,True,False,100,50,100,Bronze Nails,1,1
+BronzeScrap,False,False,100,50,30,Scrap Bronze,1,1
+BugMeat,True,False,100,50,20,Seeker Meat,1,1
+CapeAsh,True,True,1200,50,1,Ashen Cape,4,17
+CapeAsksvin,True,True,1500,50,1,Asksvin Cloak,4,17
+CapeDeerHide,True,True,400,50,1,Deer Hide Cape,4,17
+CapeFeather,True,True,1200,50,1,Feather Cape,4,17
+CapeLinen,True,True,1500,50,1,Linen Cape,4,17
+CapeLox,True,True,1200,50,1,Lox Cape,4,17
 CapeOdin,True,True,1500,50,1,Cape of Odin,4,17
-CapeTrollHide,True,True,500,50,1,Troll hide cape,4,17
-CapeWolf,True,True,1000,50,1,Wolf fur cape,4,17
+CapeTrollHide,True,True,500,50,1,Troll Hide Cape,4,17
+CapeWolf,True,True,1000,50,1,Wolf Fur Cape,4,17
 Carapace,True,False,100,50,50,Carapace,1,1
 Carrot,True,False,100,50,50,Carrot,1,2
-CarrotSeeds,True,False,100,50,100,Carrot seeds,1,1
-CarrotSoup,True,False,100,50,10,Carrot soup,1,2
+CarrotSeeds,True,False,100,50,100,Carrot Seeds,1,1
+CarrotSoup,True,False,100,50,10,Carrot Soup,1,2
+Catapult_ammo,True,False,100,50,50,Grausten Payload,1,1
+cave_dome_bottom_lake,True,False,100,50,10,Tetra,5,21
+cave_new_crossroads01_hole,True,False,100,50,10,Tetra,5,21
+cave_new_crossroads01_hole_ice,True,False,100,50,10,Tetra,5,21
+cave_new_crossroads01_hole_long,True,False,100,50,10,Tetra,5,21
+cave_new_crossroads01_hole_shrine,True,False,100,50,10,Tetra,5,21
+cave_new_crossroads01_hole_to_deeproom,True,False,100,50,10,Tetra,5,21
+cave_new_deeproom_bottom_lake,True,False,100,50,10,Tetra,5,21
+cave_new_sloperoom_w_hole,True,False,100,50,10,Tetra,5,21
+cave_shrine_hole01,True,False,100,50,10,Tetra,5,21
+CelestialFeather,True,False,100,50,50,Celestial Feather,1,1
+CeramicPlate,True,False,100,50,30,Ceramic Plate,1,1
 Chain,True,False,100,50,50,Chain,1,1
-chest_hildir1,False,False,100,50,1,Hildir's brass chest,1,16
-chest_hildir2,False,False,100,50,1,Hildir's silver chest,1,16
-chest_hildir3,False,False,100,50,1,Hildir's bronze chest,1,16
+CharcoalResin,True,False,100,50,50,Charcoal Resin,1,1
+CharredBone,True,False,100,50,50,Charred Bone,1,1
+CharredCogwheel,False,False,100,50,10,Charred Cogwheel,1,1
+Charredskull,True,False,100,50,50,Charred Skull,1,1
+chest_hildir1,False,False,100,50,1,Hildir's Brass Chest,1,16
+chest_hildir2,False,False,100,50,1,Hildir's Silver Chest,1,16
+chest_hildir3,False,False,100,50,1,Hildir's Bronze Chest,1,16
 ChickenEgg,True,False,100,50,20,Egg,1,16
-ChickenMeat,True,False,100,50,20,Chicken meat,1,1
+ChickenMeat,True,False,100,50,20,Chicken Meat,1,1
 Chitin,True,False,100,50,50,Chitin,1,1
 Cloudberry,True,False,100,50,50,Cloudberries,1,2
 Club,True,True,100,50,1,Club,4,3
 Coal,True,False,100,50,50,Coal,1,1
 Coins,True,False,100,50,999,Coins,1,1
-CookedBugMeat,True,False,100,50,20,Cooked seeker meat,1,2
-CookedChickenMeat,True,False,100,50,20,Cooked chicken meat,1,2
-CookedDeerMeat,True,False,100,50,20,Cooked deer meat,1,2
-CookedEgg,True,False,100,50,20,Cooked egg,1,2
-CookedHareMeat,True,False,100,50,20,Cooked hare meat,1,2
-CookedLoxMeat,True,False,100,50,20,Cooked lox meat,1,2
-CookedMeat,True,False,100,50,20,Cooked boar meat,1,2
-CookedWolfMeat,True,False,100,50,20,Cooked wolf meat,1,2
+CookedAsksvinMeat,True,False,100,50,20,Cooked Asksvin Tail,1,2
+CookedBoneMawSerpentMeat,True,False,100,50,50,Cooked Bonemaw Meat,1,2
+CookedBugMeat,True,False,100,50,20,Cooked Seeker Meat,1,2
+CookedChickenMeat,True,False,100,50,20,Cooked Chicken Meat,1,2
+CookedDeerMeat,True,False,100,50,20,Cooked Deer Meat,1,2
+CookedEgg,True,False,100,50,20,Cooked Egg,1,2
+CookedHareMeat,True,False,100,50,20,Cooked Hare Meat,1,2
+CookedLoxMeat,True,False,100,50,20,Cooked Lox Meat,1,2
+CookedMeat,True,False,100,50,20,Cooked Boar Meat,1,2
+CookedVoltureMeat,True,False,100,50,20,Cooked Volture Meat,1,2
+CookedWolfMeat,True,False,100,50,20,Cooked Wolf Meat,1,2
 Copper,False,False,100,50,30,Copper,1,1
-CopperOre,False,False,100,50,30,Copper ore,1,1
-CopperScrap,False,False,100,50,30,Copper scrap,1,1
+CopperOre,False,False,100,50,30,Copper Ore,1,1
+CopperScrap,False,False,100,50,30,Copper Scrap,1,1
 CrossbowArbalest,True,True,50,50,1,Arbalest,4,4
-CryptKey,True,False,100,50,1,Swamp key,1,16
+CrossbowRipper,True,True,50,50,1,Ripper,4,4
+CrossbowRipperBlood,True,True,50,50,1,Wound Ripper,4,4
+CrossbowRipperLightning,True,True,50,50,1,Storm Ripper,4,4
+CrossbowRipperNature,True,True,50,50,1,Root Ripper,4,4
+CryptKey,True,False,100,50,1,Swamp Key,1,16
 Crystal,True,False,100,50,50,Crystal,1,1
 Cultivator,True,True,200,200,1,Cultivator,3,19
 Dandelion,True,False,100,50,50,Dandelion,1,1
-DeerHide,True,False,100,50,50,Deer hide,1,1
-DeerMeat,True,False,100,50,20,Deer meat,1,1
-DeerStew,True,False,100,50,10,Deer stew,1,2
+DeerHide,True,False,100,50,50,Deer Hide,1,1
+DeerMeat,True,False,100,50,20,Deer Meat,1,1
+DeerStew,True,False,100,50,10,Deer Stew,1,2
 Demister,True,False,100,50,1,Wisplight,1,18
-DragonEgg,False,False,100,50,1,Dragon egg,1,16
-DragonTear,True,False,100,50,50,Dragon tear,1,1
+DragonEgg,False,False,100,50,1,Dragon Egg,1,16
+DragonTear,True,False,100,50,50,Dragon Tear,1,1
 DvergerArbalest,True,True,50,50,1,Arbalest,4,18
 DvergerArbalest_shoot,True,True,50,50,1,Arbalest,4,3
+DvergerArbalest_shootAshlands,True,True,50,50,1,Arbalest,4,3
 DvergrKey,True,False,100,50,1,Sealbreaker,1,16
-DvergrKeyFragment,True,False,100,50,9,Sealbreaker fragment,1,1
-DvergrNeedle,False,False,100,50,10,Dvergr extractor,1,1
-Eitr,True,False,100,50,30,Refined eitr,1,1
-ElderBark,True,False,100,50,50,Ancient bark,1,1
+DvergrKeyFragment,True,False,100,50,9,Sealbreaker Fragment,1,1
+DvergrNeedle,False,False,100,50,10,Dvergr Extractor,1,1
+DyrnwynBladeFragment,True,False,100,50,1,Dyrnwyn Blade Fragment,1,1
+DyrnwynHiltFragment,True,False,100,50,1,Dyrnwyn Hilt Fragment,1,1
+DyrnwynTipFragment,True,False,100,50,1,Dyrnwyn Tip Fragment,1,1
+Eitr,True,False,100,50,30,Refined Eitr,1,1
+ElderBark,True,False,100,50,50,Ancient Bark,1,1
 Entrails,True,False,100,50,50,Entrails,1,1
 Eyescream,True,False,100,50,10,Eyescream,1,2
+FaderDrop,True,False,100,50,30,Fader Relic,1,1
 Feathers,True,False,100,50,50,Feathers,1,1
-FineWood,True,False,100,50,50,Fine wood,1,1
-FirCone,True,False,100,50,100,Fir cone,1,1
-FireworksRocket_Blue,True,False,100,50,10,Blue firework,1,1
-FireworksRocket_Cyan,True,False,100,50,10,Cyan firework,1,1
-FireworksRocket_Green,True,False,100,50,10,Green firework,1,1
-FireworksRocket_Purple,True,False,100,50,10,Purple firework,1,1
-FireworksRocket_Red,True,False,100,50,10,Red firework,1,1
-FireworksRocket_White,True,False,100,50,10,Basic firework,1,1
-FireworksRocket_Yellow,True,False,100,50,10,Yellow firework,1,1
+Fiddleheadfern,True,False,100,50,50,Fiddlehead,1,2
+FierySvinstew,True,False,100,50,10,Fiery Svinstew,1,2
+FineWood,True,False,100,50,50,Finewood,1,1
+FirCone,True,False,100,50,100,Fir Cone,1,1
+FireworksRocket_Blue,True,False,100,50,10,Blue Fireworks,1,1
+FireworksRocket_Cyan,True,False,100,50,10,Cyan Fireworks,1,1
+FireworksRocket_Green,True,False,100,50,10,Green Fireworks,1,1
+FireworksRocket_Purple,True,False,100,50,10,Purple Fireworks,1,1
+FireworksRocket_Red,True,False,100,50,10,Red Fireworks,1,1
+FireworksRocket_White,True,False,100,50,10,Basic Fireworks,1,1
+FireworksRocket_Yellow,True,False,100,50,10,Yellow Fireworks,1,1
 Fish1,True,False,100,50,10,Perch,5,21
-Fish10,True,False,100,50,10,Northern salmon,5,21
+Fish10,True,False,100,50,10,Northern Salmon,5,21
 Fish11,True,False,100,50,10,Magmafish,5,21
-Fish12,True,False,100,50,10,Pufferfish,5,21
 Fish2,True,False,100,50,10,Pike,5,21
 Fish3,True,False,100,50,10,Tuna,5,21
 Fish4_cave,True,False,100,50,10,Tetra,5,21
 Fish5,True,False,100,50,10,Trollfish,5,21
-Fish6,True,False,100,50,10,Giant herring,5,21
+Fish6,True,False,100,50,10,Giant Herring,5,21
 Fish7,True,False,100,50,10,Grouper,5,21
-Fish8,True,False,100,50,10,Coral cod,5,21
+Fish8,True,False,100,50,10,Coral Cod,5,21
 Fish9,True,False,100,50,10,Anglerfish,5,21
-FishAndBread,True,False,100,50,10,Fish 'n' bread,1,2
+FishAndBread,True,False,100,50,10,Fish 'n' Bread,1,2
 FishAndBreadUncooked,True,False,100,50,10,Uncooked fish n' bread,1,1
-FishAnglerRaw,True,False,100,50,20,Raw fish,1,1
-FishCooked,True,False,100,50,20,Cooked fish,1,2
-FishingBait,True,False,100,50,100,Fishing bait,1,9
-FishingBaitAshlands,True,False,100,50,100,Hot fishing bait,1,9
-FishingBaitCave,True,False,100,50,100,Cold fishing bait,1,9
-FishingBaitDeepNorth,True,False,100,50,100,Frosty fishing bait,1,9
-FishingBaitForest,True,False,100,50,100,Mossy fishing bait,1,9
-FishingBaitMistlands,True,False,100,50,100,Misty fishing bait,1,9
-FishingBaitOcean,True,False,100,50,100,Heavy fishing bait,1,9
-FishingBaitPlains,True,False,100,50,100,Stingy fishing bait,1,9
-FishingBaitSwamp,True,False,100,50,100,Sticky fishing bait,1,9
-FishingRod,True,False,100,50,1,Fishing rod,1,14
-FishRaw,True,False,100,50,20,Raw fish,1,1
-FishWraps,True,False,100,50,10,Fish wraps,1,2
-FistFenrirClaw,True,True,300,50,1,Flesh rippers,4,14
-Flametal,False,False,100,50,30,Flametal,1,1
-FlametalOre,False,False,100,50,30,Flametal ore,1,1
+FishAnglerRaw,True,False,100,50,20,Raw Fish,1,1
+FishCooked,True,False,100,50,20,Cooked Fish,1,2
+FishingBait,True,False,100,50,100,Fishing Bait,1,9
+FishingBaitAshlands,True,False,100,50,100,Hot Fishing Bait,1,9
+FishingBaitCave,True,False,100,50,100,Cold Fishing Bait,1,9
+FishingBaitDeepNorth,True,False,100,50,100,Frosty Fishing Bait,1,9
+FishingBaitForest,True,False,100,50,100,Mossy Fishing Bait,1,9
+FishingBaitMistlands,True,False,100,50,100,Misty Fishing Bait,1,9
+FishingBaitOcean,True,False,100,50,100,Heavy Fishing Bait,1,9
+FishingBaitPlains,True,False,100,50,100,Stingy Fishing Bait,1,9
+FishingBaitSwamp,True,False,100,50,100,Sticky Fishing Bait,1,9
+FishingRod,True,False,100,50,1,Fishing Rod,1,14
+FishRaw,True,False,100,50,20,Raw Fish,1,1
+FishWraps,True,False,100,50,10,Fish Wraps,1,2
+FistFenrirClaw,True,True,300,50,1,Flesh Rippers,4,14
+FlametalNew,False,False,100,50,30,Flametal,1,1
+FlametalOre,False,False,100,50,30,Glowing Metal Ore,1,1
+FlametalOreNew,False,False,100,50,30,Flametal Ore,1,1
+Flametal,False,False,100,50,30,Ancient Metal,1,1
 Flax,True,False,100,50,100,Flax,1,1
 Flint,True,False,100,50,30,Flint,1,1
-FreezeGland,True,False,100,50,50,Freeze gland,1,1
-GiantBloodSack,True,False,100,50,50,Blood clot,1,1
-GoblinTotem,True,False,100,50,30,Fuling totem,1,16
-GreydwarfEye,True,False,100,50,50,Greydwarf eye,1,1
+FreezeGland,True,False,100,50,50,Freeze Gland,1,1
+GemstoneBlue,True,False,100,50,50,Iolite,1,1
+GemstoneGreen,True,False,100,50,50,Jade,1,1
+GemstoneRed,True,False,100,50,50,Bloodstone,1,1
+GiantBloodSack,True,False,100,50,50,Blood Clot,1,1
+GoblinTotem,True,False,100,50,30,Fuling Totem,1,16
+gobvill_refusepit,True,False,100,50,50,Bone Fragments,1,1
+Grausten,True,False,100,50,50,Grausten,1,1
+GreydwarfEye,True,False,100,50,50,Greydwarf Eye,1,1
 Guck,True,False,100,50,50,Guck,1,1
 Hair1,True,False,100,50,1,Ponytail 1,1,10
-Hair10,True,False,100,50,1,Side swept 2,1,10
+Hair10,True,False,100,50,1,Side Swept 2,1,10
 Hair10_2,True,False,100,50,1,Long 1,1,10
 Hair11,True,False,100,50,1,Braided 2,1,10
 Hair11_2,True,False,100,50,1,Long 1,1,10
@@ -238,34 +309,34 @@ Hair12_2,True,False,100,50,1,Long 1,1,10
 Hair13,True,False,100,50,1,Braided 4,1,10
 Hair13_2,True,False,100,50,1,Long 1,1,10
 Hair13_3,True,False,100,50,1,Long 1,1,10
-Hair14,True,False,100,50,1,Side swept 3,1,10
+Hair14,True,False,100,50,1,Side Swept 3,1,10
 Hair14_2,True,False,100,50,1,Long 1,1,10
-Hair15,True,False,100,50,1,Pulled back curls,1,10
+Hair15,True,False,100,50,1,Pulled Back Curls,1,10
 Hair15_2,True,False,100,50,1,Long 1,1,10
 Hair15_3,True,False,100,50,1,Long 1,1,10
-Hair16,True,False,100,50,1,Gathered braids,1,10
+Hair16,True,False,100,50,1,Gathered Braids,1,10
 Hair16_2,True,False,100,50,1,Long 1,1,10
-Hair17,True,False,100,50,1,Neat braids,1,10
+Hair17,True,False,100,50,1,Neat Braids,1,10
 Hair17_2,True,False,100,50,1,Long 1,1,10
-Hair18,True,False,100,50,1,Royal braids,1,10
+Hair18,True,False,100,50,1,Royal Braids,1,10
 Hair18_2,True,False,100,50,1,Long 1,1,10
 Hair19,True,False,100,50,1,Curls 1,1,10
 Hair2,True,False,100,50,1,Ponytail 2,1,10
 Hair20,True,False,100,50,1,Curls 2,1,10
-Hair21,True,False,100,50,1,Twin buns,1,10
+Hair21,True,False,100,50,1,Twin Buns,1,10
 Hair21_2,True,False,100,50,1,Long 1,1,10
-Hair22,True,False,100,50,1,Single bun,1,10
+Hair22,True,False,100,50,1,Single Bun,1,10
 Hair22_2,True,False,100,50,1,Long 1,1,10
-Hair23,True,False,100,50,1,Short curls,1,10
-Hair24,True,False,100,50,1,Shaved and braided,1,10
+Hair23,True,False,100,50,1,Short Curls,1,10
+Hair24,True,False,100,50,1,Shaved and Braided,1,10
 Hair24_2,True,False,100,50,1,Long 1,1,10
 Hair24_3,True,False,100,50,1,Long 1,1,10
-Hair25,True,False,100,50,1,Single bun 2,1,10
-Hair26,True,False,100,50,1,Short locs,1,10
-Hair27,True,False,100,50,1,Braids of strength,1,10
+Hair25,True,False,100,50,1,Single Bun 2,1,10
+Hair26,True,False,100,50,1,Short Locs,1,10
+Hair27,True,False,100,50,1,Braids of Strength,1,10
 Hair27_2,True,False,100,50,1,Long 1,1,10
 Hair27_3,True,False,100,50,1,Long 1,1,10
-Hair28,True,False,100,50,1,Merchant's braid,1,10
+Hair28,True,False,100,50,1,Merchant's Braid,1,10
 Hair28_2,True,False,100,50,1,Long 1,1,10
 Hair28_3,True,False,100,50,1,Long 1,1,10
 Hair29,True,False,100,50,1,Loose 2,1,10
@@ -274,7 +345,7 @@ Hair3,True,False,100,50,1,Braided 1,1,10
 Hair30,True,False,100,50,1,Loose 3,1,10
 Hair30_2,True,False,100,50,1,Long 1,1,10
 Hair30_3,True,False,100,50,1,Long 1,1,10
-Hair31,True,False,100,50,1,Gathered locs,1,10
+Hair31,True,False,100,50,1,Gathered Locs,1,10
 Hair31_2,True,False,100,50,1,Long 1,1,10
 Hair31_3,True,False,100,50,1,Long 1,1,10
 Hair3_2,True,False,100,50,1,Braided 1,1,10
@@ -291,259 +362,323 @@ Hair7,True,False,100,50,1,Ponytail 4,1,10
 Hair7_2,True,False,100,50,1,Long 1,1,10
 Hair8,True,False,100,50,1,Short 2,1,10
 Hair8_2,True,False,100,50,1,Long 1,1,10
-Hair9,True,False,100,50,1,Side swept 1,1,10
+Hair9,True,False,100,50,1,Side Swept 1,1,10
 Hair9_2,True,False,100,50,1,Long 1,1,10
-HairNone,True,False,100,50,1,No hair,1,10
+HairNone,True,False,100,50,1,No Hair,1,10
 Hammer,True,True,100,100,1,Hammer,3,19
-HardAntler,True,False,100,50,50,Hard antler,1,1
-HareMeat,True,False,100,50,20,Hare meat,1,1
-HelmetBronze,True,True,1000,200,1,Bronze helmet,4,6
-HelmetCarapace,True,True,1200,200,1,Carapace helmet,4,6
-HelmetDrake,True,True,1000,200,1,Drake helmet,4,6
-HelmetDverger,True,False,1000,100,1,Dverger circlet,1,6
-HelmetFenring,True,True,1000,200,1,Fenris hood,4,6
-HelmetFishingHat,True,True,1000,200,1,Fishing hat,4,6
-HelmetHat1,True,True,800,100,1,Tied headscarf blue,4,6
-HelmetHat10,True,True,800,100,1,Simple cap purple,4,6
-HelmetHat2,True,True,800,100,1,Twisted headscarf green,4,6
-HelmetHat3,True,True,800,100,1,Fur cap brown,4,6
-HelmetHat4,True,True,800,100,1,Extravagant cap green,4,6
-HelmetHat5,True,True,800,100,1,Simple cap red,4,6
-HelmetHat6,True,True,800,100,1,Tied headscarf yellow,4,6
-HelmetHat7,True,True,800,100,1,Twisted headscarf red,4,6
-HelmetHat8,True,True,800,100,1,Fur cap grey,4,6
-HelmetHat9,True,True,800,100,1,Extravagant cap orange,4,6
-HelmetIron,True,True,1000,200,1,Iron helmet,4,6
-HelmetLeather,True,True,400,100,1,Leather helmet,4,6
-HelmetMage,True,True,1000,200,1,Eitr-weave hood,4,6
-HelmetMidsummerCrown,True,False,1000,50,1,Midsummer crown,1,6
+HardAntler,True,False,100,50,50,Hard Antler,1,1
+HareMeat,True,False,100,50,20,Hare Meat,1,1
+HelmetAshlandsMediumHood,True,True,1000,200,1,Hood of Ask,4,6
+HelmetBronze,True,True,1000,200,1,Bronze Helmet,4,6
+HelmetCarapace,True,True,1200,200,1,Carapace Helmet,4,6
+HelmetDrake,True,True,1000,200,1,Drake Helmet,4,6
+HelmetDverger,True,False,1000,100,1,Dverger Circlet,1,6
+HelmetFenring,True,True,1000,200,1,Fenris Hood,4,6
+HelmetFishingHat,True,True,1000,200,1,Fishing Hat,4,6
+HelmetFlametal,True,True,800,100,1,Flametal Helmet,4,6
+HelmetHat1,True,True,800,100,1,Tied Headscarf Blue,4,6
+HelmetHat10,True,True,800,100,1,Simple Cap Purple,4,6
+HelmetHat2,True,True,800,100,1,Twisted Headscarf Green,4,6
+HelmetHat3,True,True,800,100,1,Fur Cap Brown,4,6
+HelmetHat4,True,True,800,100,1,Extravagant Cap Green,4,6
+HelmetHat5,True,True,800,100,1,Simple Cap Red,4,6
+HelmetHat6,True,True,800,100,1,Tied Headscarf Yellow,4,6
+HelmetHat7,True,True,800,100,1,Twisted Headscarf Red,4,6
+HelmetHat8,True,True,800,100,1,Fur Cap Grey,4,6
+HelmetHat9,True,True,800,100,1,Extravagant Cap Orange,4,6
+HelmetIron,True,True,1000,200,1,Iron Helmet,4,6
+HelmetLeather,True,True,400,100,1,Leather Helmet,4,6
+HelmetMage,True,True,1000,200,1,Eitr-weave Hood,4,6
+HelmetMage_Ashlands,True,True,1000,200,1,Hood of Embla,4,6
+HelmetMidsummerCrown,True,False,1000,50,1,Midsummer Crown,1,6
 HelmetOdin,True,True,300,100,1,Hood of Odin,4,6
-HelmetPadded,True,True,1000,200,1,Padded helmet,4,6
-HelmetRoot,True,True,800,100,1,Root mask,4,6
-HelmetTrollLeather,True,True,500,200,1,Troll leather helmet,4,6
-HelmetYule,True,False,1000,50,1,Yule hat,1,6
-HildirKey_forestcrypt,True,False,100,50,1,Hildir's brass key,1,16
-HildirKey_mountaincave,True,False,100,50,1,Hildir's silver key,1,16
-HildirKey_plainsfortress,True,False,100,50,1,Hildir's bronze key,1,16
+HelmetPadded,True,True,1000,200,1,Padded Helmet,4,6
+HelmetPointyHat,True,True,800,100,1,Pointy Hat,4,6
+HelmetRoot,True,True,800,100,1,Root Mask,4,6
+HelmetTrollLeather,True,True,500,200,1,Troll Leather Hood,4,6
+HelmetYule,True,False,1000,50,1,Yule Hat,1,6
+HildirKey_forestcrypt,True,False,100,50,1,Hildir's Brass Key,1,16
+HildirKey_mountaincave,True,False,100,50,1,Hildir's Silver Key,1,16
+HildirKey_plainsfortress,True,False,100,50,1,Hildir's Bronze Key,1,16
 Hoe,True,True,200,200,1,Hoe,3,19
 Honey,True,False,100,50,50,Honey,1,2
-HoneyGlazedChicken,True,False,100,50,10,Honey glazed chicken,1,2
-HoneyGlazedChickenUncooked,True,False,100,50,10,Uncooked honey glazed chicken,1,1
+HoneyGlazedChicken,True,False,100,50,10,Honey Glazed Chicken,1,2
+HoneyGlazedChickenUncooked,True,False,100,50,10,Uncooked Honey Glazed Chicken,1,1
 Iron,False,False,100,50,30,Iron,1,1
-IronNails,True,False,100,50,100,Iron nails,1,1
-IronOre,False,False,100,50,30,Iron ore,1,1
-Ironpit,False,False,100,50,10,Iron pit,1,1
-IronScrap,False,False,100,50,30,Scrap iron,1,1
-JuteBlue,True,False,100,50,50,Blue jute,1,1
-JuteRed,True,False,100,50,50,Red jute,1,1
-KnifeBlackMetal,True,True,200,50,1,Blackmetal knife,4,3
-KnifeButcher,True,True,200,50,1,Butcher knife,1,3
-KnifeChitin,True,True,200,50,1,Abyssal razor,4,3
-KnifeCopper,True,True,200,50,1,Copper knife,4,3
-KnifeFlint,True,True,200,50,1,Flint knife,4,3
-KnifeSilver,True,True,200,50,1,Silver knife,4,3
+IronNails,True,False,100,50,100,Iron Nails,1,1
+IronOre,False,False,100,50,30,Iron Ore,1,1
+Ironpit,False,False,100,50,10,Iron Pit,1,1
+IronScrap,False,False,100,50,30,Scrap Iron,1,1
+JuteBlue,True,False,100,50,50,Blue Jute,1,1
+JuteRed,True,False,100,50,50,Red Jute,1,1
+KnifeBlackMetal,True,True,200,50,1,Black Metal Knife,4,3
+KnifeButcher,True,True,200,50,1,Butcher Knife,1,3
+KnifeChitin,True,True,200,50,1,Abyssal Razor,4,3
+KnifeCopper,True,True,200,50,1,Copper Knife,4,3
+KnifeFlint,True,True,200,50,1,Flint Knife,4,3
+KnifeSilver,True,True,200,50,1,Silver Knife,4,3
 KnifeSkollAndHati,True,True,200,50,1,Skoll and Hati,4,14
-Lantern,True,False,0,0,1,Dvergr lantern,1,15
-LeatherScraps,True,False,100,50,50,Leather scraps,1,1
-LinenThread,True,False,100,50,50,Linen thread,1,1
-LoxMeat,True,False,100,50,20,Lox meat,1,1
-LoxPelt,True,False,100,50,50,Lox pelt,1,1
-LoxPie,True,False,100,50,10,Lox meat pie,1,2
-LoxPieUncooked,True,False,100,50,10,Unbaked lox pie,1,1
-MaceBronze,True,True,200,50,1,Bronze mace,4,3
-MaceIron,True,True,200,50,1,Iron mace,4,3
+Lantern,True,False,0,0,1,Dvergr Lantern,1,15
+LeatherScraps,True,False,100,50,50,Leather Scraps,1,1
+LinenThread,True,False,100,50,50,Linen Thread,1,1
+LoxMeat,True,False,100,50,20,Lox Meat,1,1
+LoxPelt,True,False,100,50,50,Lox Pelt,1,1
+LoxPie,True,False,100,50,10,Lox Meat Pie,1,2
+LoxPieUncooked,True,False,100,50,10,Unbaked Lox Pie,1,1
+MaceBronze,True,True,200,50,1,Bronze Mace,4,3
+MaceEldner,True,True,150,50,1,Flametal Mace,4,3
+MaceEldnerBlood,True,True,150,50,1,Bloodgeon,4,3
+MaceEldnerLightning,True,True,150,50,1,Storm Star,4,3
+MaceEldnerNature,True,True,150,50,1,Klossen,4,3
+MaceIron,True,True,200,50,1,Iron Mace,4,3
 MaceNeedle,True,True,150,50,1,Porcupine,4,3
 MaceSilver,True,True,200,50,1,Frostner,4,3
-MagicallyStuffedShroom,True,False,100,50,10,Stuffed mushroom,1,2
-MagicallyStuffedShroomUncooked,True,False,100,50,10,Uncooked stuffed shroom,1,1
+MagicallyStuffedShroom,True,False,100,50,10,Stuffed Mushroom,1,2
+MagicallyStuffedShroomUncooked,True,False,100,50,10,Uncooked Stuffed Mushroom,1,1
 Mandible,True,False,100,50,50,Mandible,1,1
-MeadBaseEitrMinor,True,False,100,50,1,Mead base: Minor eitr,1,1
-MeadBaseFrostResist,True,False,100,50,1,Mead base: Frost resistance,1,1
-MeadBaseHealthMajor,True,False,100,50,1,Mead base: Major healing,1,1
-MeadBaseHealthMedium,True,False,100,50,1,Mead base: Medium healing,1,1
-MeadBaseHealthMinor,True,False,100,50,1,Mead base: Minor healing,1,1
-MeadBasePoisonResist,True,False,100,50,1,Mead base: Poison resistance,1,1
-MeadBaseStaminaLingering,True,False,100,50,1,Mead base: Lingering stamina,1,1
-MeadBaseStaminaMedium,True,False,100,50,1,Mead base: Medium stamina,1,1
-MeadBaseStaminaMinor,True,False,100,50,1,Mead base: Minor stamina,1,1
-MeadBaseTasty,True,False,100,50,1,Mead base: Tasty,1,1
-MeadEitrMinor,True,False,100,50,10,Minor eitr mead,1,2
-MeadFrostResist,True,False,100,50,10,Frost resistance mead,1,2
-MeadHealthMajor,True,False,100,50,10,Major healing mead,1,2
-MeadHealthMedium,True,False,100,50,10,Medium healing mead,1,2
-MeadHealthMinor,True,False,100,50,10,Minor healing mead,1,2
-MeadPoisonResist,True,False,100,50,10,Poison resistance mead,1,2
-MeadStaminaLingering,True,False,100,50,10,Lingering stamina mead,1,2
-MeadStaminaMedium,True,False,100,50,10,Medium stamina mead,1,2
-MeadStaminaMinor,True,False,100,50,10,Minor stamina mead,1,2
-MeadTasty,True,False,100,50,10,Tasty mead,1,2
-MeatPlatter,True,False,100,50,10,Meat platter,1,2
-MeatPlatterUncooked,True,False,100,50,10,Uncooked meat platter,1,1
-MechanicalSpring,False,False,100,50,10,Mechanical spring,1,1
+MarinatedGreens,True,False,100,50,10,Marinated Greens,1,2
+MashedMeat,True,False,100,50,10,Mashed Meat,1,2
+MeadBaseEitrLingering,True,False,100,50,1,Mead Base: Lingering Eitr,1,1
+MeadBaseEitrMinor,True,False,100,50,1,Mead Base: Minor Eitr,1,1
+MeadBaseFrostResist,True,False,100,50,1,Mead Base: Frost Resistance,1,1
+MeadBaseHealthLingering,True,False,100,50,1,Mead Base: Lingering Health,1,1
+MeadBaseHealthMajor,True,False,100,50,1,Mead Base: Major Healing,1,1
+MeadBaseHealthMedium,True,False,100,50,1,Mead Base: Medium Healing,1,1
+MeadBaseHealthMinor,True,False,100,50,1,Mead Base: Minor Healing,1,1
+MeadBasePoisonResist,True,False,100,50,1,Mead Base: Poison Resistance,1,1
+MeadBaseStaminaLingering,True,False,100,50,1,Mead Base: Lingering Stamina,1,1
+MeadBaseStaminaMedium,True,False,100,50,1,Mead Base: Medium Stamina,1,1
+MeadBaseStaminaMinor,True,False,100,50,1,Mead Base: Minor Stamina,1,1
+MeadBaseTasty,True,False,100,50,1,Mead Base: Tasty,1,1
+MeadEitrLingering,True,False,100,50,10,Lingering Eitr Mead,1,2
+MeadEitrMinor,True,False,100,50,10,Minor Eitr Mead,1,2
+MeadFrostResist,True,False,100,50,10,Frost Resistance Mead,1,2
+MeadHealthLingering,True,False,100,50,10,Lingering Healing Mead,1,2
+MeadHealthMajor,True,False,100,50,10,Major Healing Mead,1,2
+MeadHealthMedium,True,False,100,50,10,Medium Healing Mead,1,2
+MeadHealthMinor,True,False,100,50,10,Minor Healing Mead,1,2
+MeadPoisonResist,True,False,100,50,10,Poison Resistance Mead,1,2
+MeadStaminaLingering,True,False,100,50,10,Lingering Stamina Mead,1,2
+MeadStaminaMedium,True,False,100,50,10,Medium Stamina Mead,1,2
+MeadStaminaMinor,True,False,100,50,10,Minor Stamina Mead,1,2
+MeadTasty,True,False,100,50,10,Tasty Mead,1,2
+MeatPlatterUncooked,True,False,100,50,10,Uncooked Meat Platter,1,1
+MeatPlatter,True,False,100,50,10,Meat Platter,1,2
+MechanicalSpring,False,False,100,50,10,Mechanical Spring,1,1
 MinceMeatSauce,True,False,100,50,10,Minced Meat Sauce,1,2
-MisthareSupreme,True,False,100,50,10,Misthare supreme,1,2
-MisthareSupremeUncooked,True,False,100,50,10,Uncooked misthare supreme,1,1
+MisthareSupreme,True,False,100,50,10,Misthare Supreme,1,2
+MisthareSupremeUncooked,True,False,100,50,10,Uncooked Misthare Supreme,1,1
+MoltenCore,True,False,100,50,20,Molten Core,1,1
+MorgenHeart,True,False,100,50,50,Morgen Heart,1,1
+MorgenSinew,True,False,100,50,50,Morgen Sinew,1,1
 Mushroom,True,False,100,50,50,Mushroom,1,2
-MushroomBlue,True,False,100,50,50,Blue mushroom,1,2
-MushroomJotunPuffs,True,False,100,50,50,Jotun puffs,1,2
+MushroomBlue,True,False,100,50,50,Blue Mushroom,1,2
+MushroomJotunPuffs,True,False,100,50,50,Jotun Puffs,1,2
 MushroomMagecap,True,False,100,50,50,Magecap,1,2
-MushroomOmelette,True,False,100,50,10,Mushroom omelette,1,2
-MushroomYellow,True,False,100,50,50,Yellow mushroom,1,2
-NeckTail,True,False,100,50,50,Neck tail,1,1
-NeckTailGrilled,True,False,100,50,20,Grilled neck tail,1,2
+MushroomOmelette,True,False,100,50,10,Mushroom Omelette,1,2
+MushroomSmokePuff,True,False,100,50,50,Smoke Puff,1,2
+MushroomYellow,True,False,100,50,50,Yellow Mushroom,1,2
+NeckTail,True,False,100,50,50,Neck Tail,1,1
+NeckTailGrilled,True,False,100,50,20,Grilled Neck Tail,1,2
 Needle,True,False,100,50,50,Needle,1,1
 Obsidian,True,False,100,50,50,Obsidian,1,1
 Onion,True,False,100,50,50,Onion,1,2
-OnionSeeds,True,False,100,50,100,Onion seeds,1,1
-OnionSoup,True,False,100,50,10,Onion soup,1,2
+OnionSeeds,True,False,100,50,100,Onion Seeds,1,1
+OnionSoup,True,False,100,50,10,Onion Soup,1,2
 Ooze,True,False,100,50,50,Ooze,1,1
-PickaxeAntler,True,True,100,50,1,Antler pickaxe,1,14
-PickaxeBlackMetal,True,True,210,50,1,Black metal pickaxe,4,14
-PickaxeBronze,True,True,120,50,1,Bronze pickaxe,4,14
-PickaxeIron,True,True,150,50,1,Iron pickaxe,4,14
-PickaxeStone,True,True,100,50,1,Stone pickaxe,1,14
-PineCone,True,False,100,50,100,Pine cone,1,1
+PickaxeAntler,True,True,100,50,1,Antler Pickaxe,1,14
+PickaxeBlackMetal,True,True,210,50,1,Black Metal Pickaxe,4,14
+PickaxeBronze,True,True,120,50,1,Bronze Pickaxe,4,14
+PickaxeIron,True,True,150,50,1,Iron Pickaxe,4,14
+PickaxeStone,True,True,100,50,1,Stone Pickaxe,1,14
+PineCone,True,False,100,50,100,Pine Cone,1,1
+PiquantPie,True,False,100,50,10,Piquant Pie,1,2
+PiquantPieUncooked,True,False,100,50,10,Uncooked Piquant Pie,1,1
+Pot_Shard_Green,True,False,100,50,50,Pot Shard,1,1
+ProustitePowder,True,False,100,50,50,Proustite Powder,1,1
 Pukeberries,True,False,100,50,50,Bukeperries,1,2
-QueenBee,True,False,100,50,20,Queen bee,1,1
-QueenDrop,True,False,100,50,30,Queen drop,1,1
-QueensJam,True,False,100,50,10,Queen's jam,1,2
+QueenBee,True,False,100,50,20,Queen Bee,1,1
+QueenDrop,True,False,100,50,30,Majestic Carapace,1,1
+QueensJam,True,False,100,50,10,Queen's Jam,1,2
 Raspberry,True,False,100,50,50,Raspberries,1,2
-RawMeat,True,False,100,50,20,Boar meat,1,1
+RawMeat,True,False,100,50,20,Boar Meat,1,1
 Resin,True,False,100,50,50,Resin,1,1
+RoastedCrustPie,True,False,100,50,10,Roasted Crust Pie,1,2
+RoastedCrustPieUncooked,True,False,100,50,10,Uncooked Roasted Crust Pie,1,1
 Root,True,False,100,50,50,Root,1,1
-RottenMeat,True,False,100,50,20,Rotten meat,1,2
-RoundLog,True,False,100,50,50,Core wood,1,1
-RoyalJelly,True,False,100,50,50,Royal jelly,1,2
+RottenMeat,True,False,100,50,20,Rotten Meat,1,2
+RoundLog,True,False,100,50,50,Corewood,1,1
+RoyalJelly,True,False,100,50,50,Royal Jelly,1,2
 Ruby,True,False,100,50,20,Ruby,1,1
-SaddleLox,True,False,100,50,1,Lox saddle,1,16
+SaddleAsksvin,True,False,100,50,1,Asksvin Saddle,1,16
+SaddleLox,True,False,100,50,1,Lox Saddle,1,16
 Salad,True,False,100,50,10,Salad,1,2
 Sap,True,False,100,50,50,Sap,1,1
 Sausages,True,False,100,50,20,Sausages,1,2
-ScaleHide,True,False,100,50,50,Scale hide,1,1
-SeekerAspic,True,False,100,50,10,Seeker aspic,1,2
-SerpentMeat,True,False,100,50,50,Serpent meat,1,1
-SerpentMeatCooked,True,False,100,50,50,Cooked serpent meat,1,2
-SerpentScale,True,False,100,50,50,Serpent scale,1,1
-SerpentStew,True,False,100,50,10,Serpent stew,1,2
-SharpeningStone,True,False,100,50,20,Sharpening stone,1,1
-ShieldBanded,True,True,200,50,1,Banded shield,3,5
-ShieldBlackmetal,True,True,200,50,1,Black metal shield,3,5
-ShieldBlackmetalTower,True,True,200,50,1,Black metal tower shield,3,5
-ShieldBoneTower,True,True,200,50,1,Bone tower shield,3,5
-ShieldBronzeBuckler,True,True,200,50,1,Bronze buckler,3,5
-ShieldCarapace,True,True,200,50,1,Carapace shield,3,5
-ShieldCarapaceBuckler,True,True,200,50,1,Carapace buckler,3,5
-ShieldIronBuckler,True,True,200,50,1,Iron buckler,3,5
-ShieldIronSquare,True,True,200,50,1,Iron shield,3,5
-ShieldIronTower,True,True,200,50,1,Iron tower shield,3,5
+ScaleHide,True,False,100,50,50,Scale Hide,1,1
+ScorchingMedley,True,False,100,50,10,Scorching Medley,1,2
+SeekerAspic,True,False,100,50,10,Seeker Aspic,1,2
+SerpentMeat,True,False,100,50,50,Serpent Meat,1,1
+SerpentMeatCooked,True,False,100,50,50,Cooked Serpent Meat,1,2
+SerpentScale,True,False,100,50,50,Serpent Scale,1,1
+SerpentStew,True,False,100,50,10,Serpent Stew,1,2
+SharpeningStone,True,False,100,50,20,Sharpening Stone,1,1
+ShieldBanded,True,True,200,50,1,Banded Shield,3,5
+ShieldBlackmetal,True,True,200,50,1,Black Metal Shield,3,5
+ShieldBlackmetalTower,True,True,200,50,1,Black Metal Tower Shield,3,5
+ShieldBoneTower,True,True,200,50,1,Bone Tower Shield,3,5
+ShieldBronzeBuckler,True,True,200,50,1,Bronze Buckler,3,5
+ShieldCarapace,True,True,200,50,1,Carapace Shield,3,5
+ShieldCarapaceBuckler,True,True,200,50,1,Carapace Buckler,3,5
+ShieldCore,True,False,100,50,20,Shield Core,1,1
+ShieldFlametal,True,True,200,50,1,Flametal Shield,3,5
+ShieldFlametalTower,True,True,200,50,1,Flametal Tower Shield,3,5
+ShieldIronBuckler,True,True,200,50,1,Iron Buckler,3,5
+ShieldIronSquare,True,True,200,50,1,Iron Shield,3,5
+ShieldIronTower,True,True,200,50,1,Iron Tower Shield,3,5
 ShieldKnight,True,True,100,50,1,Knight shield UNUSED,1,5
-ShieldSerpentscale,True,True,250,50,1,Serpent scale shield,3,5
-ShieldSilver,True,True,200,50,1,Silver shield,3,5
-ShieldWood,True,True,200,50,1,Wood shield,3,5
-ShieldWoodTower,True,True,200,50,1,Wood tower shield,3,5
+ShieldSerpentscale,True,True,250,50,1,Serpent Scale Shield,3,5
+ShieldSilver,True,True,200,50,1,Silver Shield,3,5
+ShieldWood,True,True,200,50,1,Wood Shield,3,5
+ShieldWoodTower,True,True,200,50,1,Wood Tower Shield,3,5
 ShocklateSmoothie,True,False,100,50,10,Muckshake,1,2
 Silver,False,False,100,50,30,Silver,1,1
 SilverNecklace,True,False,100,50,20,Silver Necklace,1,1
-SilverOre,False,False,100,50,30,Silver ore,1,1
+SilverOre,False,False,100,50,30,Silver Ore,1,1
+SizzlingBerryBroth,True,False,100,50,10,Sizzling Berry Broth,1,2
 SledgeDemolisher,True,True,100,50,1,Demolisher,4,14
-SledgeIron,True,True,100,50,1,Iron sledge,4,14
+SledgeIron,True,True,100,50,1,Iron Sledge,4,14
 SledgeStagbreaker,True,True,100,50,1,Stagbreaker,4,14
-Softtissue,True,False,100,50,40,Soft tissue,1,1
+Softtissue,True,False,100,50,40,Soft Tissue,1,1
 Sparkler,True,True,8,0,1,Sparkler,1,15
-SpearBronze,True,True,100,50,1,Bronze spear,4,3
-SpearCarapace,True,True,100,50,1,Carapace spear,4,3
-SpearChitin,True,True,50,50,1,Abyssal harpoon,1,3
-SpearElderbark,True,True,100,50,1,Ancient bark spear,4,3
-SpearFlint,True,True,100,50,1,Flint spear,4,3
-SpearWolfFang,True,True,100,50,1,Fang spear,4,3
-StaffFireball,True,True,200,50,1,Staff of embers,4,14
-StaffIceShards,True,True,200,50,1,Staff of frost,4,14
-StaffShield,True,True,200,50,1,Staff of protection,4,14
-StaffSkeleton,True,True,200,50,1,Dead raiser,4,22
+SparklingShroomshake,True,False,100,50,10,Sparkling Shroomshake,1,2
+SpearBronze,True,True,100,50,1,Bronze Spear,4,3
+SpearCarapace,True,True,100,50,1,Carapace Spear,4,3
+SpearChitin,True,True,50,50,1,Abyssal Harpoon,1,3
+SpearElderbark,True,True,100,50,1,Ancient Bark Spear,4,3
+SpearFlint,True,True,100,50,1,Flint Spear,4,3
+SpearSplitner,True,True,100,50,1,Splitnir,4,3
+SpearSplitner_Blood,True,True,100,50,1,Splitnir the Bleeding,4,3
+SpearSplitner_Lightning,True,True,100,50,1,Splitnir the Storming,4,3
+SpearSplitner_Nature,True,True,100,50,1,Splitnir the Primal,4,3
+SpearWolfFang,True,True,100,50,1,Fang Spear,4,3
+SpicyMarmalade,True,False,100,50,10,Spicy Marmalade,1,2
+StaffClusterbomb,True,True,200,50,1,Staff of Fracturing,4,14
+StaffFireball,True,True,200,50,1,Staff of Embers,4,14
+StaffGreenRoots,True,True,200,50,1,Staff of the Wild,4,14
+StaffIceShards,True,True,200,50,1,Staff of Frost,4,14
+StaffLightning,True,True,200,50,1,Dundr,4,14
+StaffRedTroll,True,True,200,50,1,Trollstav,4,14
+StaffShield,True,True,200,50,1,Staff of Protection,4,14
+StaffSkeleton,True,True,200,50,1,Dead Raiser,4,22
 Stone,True,False,100,50,50,Stone,1,1
-SurtlingCore,True,False,100,50,10,Surtling core,1,1
-SwordBlackmetal,True,True,200,50,1,Blackmetal sword,4,3
-SwordBronze,True,True,200,50,1,Bronze sword,4,3
-SwordIron,True,True,200,50,1,Iron sword,4,3
+SulfurStone,True,False,100,50,50,Sulfur,1,1
+SurtlingCore,True,False,100,50,10,Surtling Core,1,1
+SwordBlackmetal,True,True,200,50,1,Black Metal Sword,4,3
+SwordBronze,True,True,200,50,1,Bronze Sword,4,3
+SwordDyrnwyn,True,True,200,50,1,Dyrnwyn,4,3
+SwordIron,True,True,200,50,1,Iron Sword,4,3
 SwordIronFire,True,True,200,50,1,Dyrnwyn,4,3
 SwordMistwalker,True,True,200,50,1,Mistwalker,4,3
-SwordSilver,True,True,200,50,1,Silver sword,4,3
+SwordNiedhogg,True,True,200,50,1,Nidhögg,4,3
+SwordNiedhoggBlood,True,True,200,50,1,Nidhögg the Bleeding,4,3
+SwordNiedhoggLightning,True,True,200,50,1,Nidhögg the Thundering,4,3
+SwordNiedhoggNature,True,True,200,50,1,Nidhögg the Primal,4,3
+SwordSilver,True,True,200,50,1,Silver Sword,4,3
 Tankard,True,False,100,50,1,Tankard,1,3
 TankardAnniversary,True,False,100,50,1,Horn of Celebration,1,3
-TankardOdin,True,False,100,50,1,Mead horn of Odin,1,3
-Tankard_dvergr,True,False,100,50,1,Dvergr tankard,1,3
+TankardOdin,True,False,100,50,1,Mead Horn of Odin,1,3
+Tankard_dvergr,True,False,100,50,1,Dvergr Tankard,1,3
 Tar,True,False,100,50,50,Tar,1,1
 Thistle,True,False,100,50,50,Thistle,1,1
 THSwordKrom,True,True,200,50,1,Krom,4,14
-Thunderstone,True,False,100,50,20,Thunder stone,1,1
+THSwordSlayer,True,True,200,50,1,Slayer,4,14
+THSwordSlayerBlood,True,True,200,50,1,Brutal Slayer,4,14
+THSwordSlayerLightning,True,True,200,50,1,Scourging Slayer,4,14
+THSwordSlayerNature,True,True,200,50,1,Primal Slayer,4,14
+Thunderstone,True,False,100,50,20,Thunder Stone,1,1
 Tin,False,False,100,50,30,Tin,1,1
-TinOre,False,False,100,50,30,Tin ore,1,1
+TinOre,False,False,100,50,30,Tin Ore,1,1
 Torch,True,True,20,50,1,Torch,1,15
-TrollHide,True,False,100,50,20,Troll hide,1,1
-TrophyAbomination,True,False,100,50,20,Abomination trophy,1,13
-TrophyBlob,True,False,100,50,20,Blob trophy,1,13
-TrophyBoar,True,False,100,50,20,Boar trophy,1,13
-TrophyBonemass,True,False,100,50,20,Bonemass trophy,1,13
-TrophyCultist,True,False,100,50,20,Cultist trophy,1,13
-TrophyCultist_Hildir,True,False,100,50,20,Geirrhafa trophy,1,13
-TrophyDeathsquito,True,False,100,50,20,Deathsquito trophy,1,13
-TrophyDeer,True,False,100,50,20,Deer trophy,1,13
-TrophyDragonQueen,True,False,100,50,20,Moder trophy,1,13
-TrophyDraugr,True,False,100,50,20,Draugr trophy,1,13
-TrophyDraugrElite,True,False,100,50,20,Draugr elite trophy,1,13
-TrophyDraugrFem,True,False,100,50,20,Draugr trophy,1,13
-TrophyDvergr,True,False,100,50,20,Dvergr trophy,1,13
-TrophyEikthyr,True,False,100,50,20,Eikthyr trophy,1,13
-TrophyFenring,True,False,100,50,20,Fenring trophy,1,13
-TrophyForestTroll,True,False,100,50,20,Troll trophy,1,13
-TrophyFrostTroll,True,False,100,50,20,Troll trophy,1,13
-TrophyGjall,True,False,100,50,20,Gjall trophy,1,13
-TrophyGoblin,True,False,100,50,20,Fuling trophy,1,13
-TrophyGoblinBrute,True,False,100,50,20,Fuling berserker trophy,1,13
-TrophyGoblinBruteBrosBrute,True,False,100,50,20,Thungr trophy,1,13
-TrophyGoblinBruteBrosShaman,True,False,100,50,20,Zil trophy,1,13
-TrophyGoblinKing,True,False,100,50,20,Yagluth trophy,1,13
-TrophyGoblinShaman,True,False,100,50,20,Fuling shaman trophy,1,13
-TrophyGreydwarf,True,False,100,50,20,Greydwarf trophy,1,13
-TrophyGreydwarfBrute,True,False,100,50,20,Greydwarf brute trophy,1,13
-TrophyGreydwarfShaman,True,False,100,50,20,Greydwarf shaman trophy,1,13
-TrophyGrowth,True,False,100,50,20,Growth trophy,1,13
-TrophyHare,True,False,100,50,20,Hare trophy,1,13
-TrophyHatchling,True,False,100,50,20,Drake trophy,1,13
-TrophyLeech,True,False,100,50,20,Leech trophy,1,13
-TrophyLox,True,False,100,50,20,Lox trophy,1,13
-TrophyNeck,True,False,100,50,20,Neck trophy,1,13
-TrophySeeker,True,False,100,50,20,Seeker trophy,1,13
-TrophySeekerBrute,True,False,100,50,20,Seeker soldier trophy,1,13
-TrophySeekerQueen,True,False,100,50,20,The Queen trophy,1,13
-TrophySerpent,True,False,100,50,20,Serpent trophy,1,13
-TrophySGolem,True,False,100,50,20,Stone golem trophy,1,13
-TrophySkeleton,True,False,100,50,20,Skeleton trophy,1,13
-TrophySkeletonHildir,True,False,100,50,20,Brenna trophy,1,13
-TrophySkeletonPoison,True,False,100,50,20,Rancid remains trophy,1,13
-TrophySurtling,True,False,100,50,20,Surtling trophy,1,13
-TrophyTheElder,True,False,100,50,20,The Elder trophy,1,13
-TrophyTick,True,False,100,50,20,Tick trophy,1,13
-TrophyUlv,True,False,100,50,20,Ulv trophy,1,13
-TrophyWolf,True,False,100,50,20,Wolf trophy,1,13
-TrophyWraith,True,False,100,50,20,Wraith trophy,1,13
-Turnip,True,False,100,50,50,Turnip,1,16
-TurnipSeeds,True,False,100,50,100,Turnip seeds,1,1
-TurnipStew,True,False,100,50,10,Turnip stew,1,2
-TurretBolt,True,False,100,50,100,Black metal missile,1,23
-TurretBoltWood,True,False,100,50,100,Wooden missile,1,23
+TrollHide,True,False,100,50,20,Troll Hide,1,1
+TrophyAbomination,True,False,100,50,20,Abomination Trophy,1,13
+TrophyAsksvin,True,False,100,50,20,Asksvin Trophy,1,13
+TrophyBlob,True,False,100,50,20,Blob Trophy,1,13
+TrophyBoar,True,False,100,50,20,Boar Trophy,1,13
+TrophyBonemass,True,False,100,50,20,Bonemass Trophy,1,13
+TrophyBonemawSerpent,True,False,100,50,20,Bonemaw Trophy,1,13
+TrophyCharredArcher,True,False,100,50,20,Marksman Trophy,1,13
+TrophyCharredMage,True,False,100,50,20,Warlock Trophy,1,13
+TrophyCharredMelee,True,False,100,50,20,Warrior Trophy,1,13
+TrophyCultist,True,False,100,50,20,Cultist Trophy,1,13
+TrophyCultist_Hildir,True,False,100,50,20,Geirrhafa Trophy,1,13
+TrophyDeathsquito,True,False,100,50,20,Deathsquito Trophy,1,13
+TrophyDeer,True,False,100,50,20,Deer Trophy,1,13
+TrophyDragonQueen,True,False,100,50,20,Moder Trophy,1,13
+TrophyDraugr,True,False,100,50,20,Draugr Trophy,1,13
+TrophyDraugrElite,True,False,100,50,20,Draugr Elite Trophy,1,13
+TrophyDraugrFem,True,False,100,50,20,Draugr Trophy,1,13
+TrophyDvergr,True,False,100,50,20,Dvergr Trophy,1,13
+TrophyEikthyr,True,False,100,50,20,Eikthyr Trophy,1,13
+TrophyFader,True,False,100,50,20,Fader Trophy,1,13
+TrophyFallenValkyrie,True,False,100,50,20,Fallen Valkyrie Trophy,1,13
+TrophyFenring,True,False,100,50,20,Fenring Trophy,1,13
+TrophyForestTroll,True,False,100,50,20,Troll Trophy,1,13
+TrophyFrostTroll,True,False,100,50,20,Troll Trophy,1,13
+TrophyGjall,True,False,100,50,20,Gjall Trophy,1,13
+TrophyGoblin,True,False,100,50,20,Fuling Trophy,1,13
+TrophyGoblinBrute,True,False,100,50,20,Fuling Berserker Trophy,1,13
+TrophyGoblinBruteBrosBrute,True,False,100,50,20,Thungr Trophy,1,13
+TrophyGoblinBruteBrosShaman,True,False,100,50,20,Zil Trophy,1,13
+TrophyGoblinKing,True,False,100,50,20,Yagluth Trophy,1,13
+TrophyGoblinShaman,True,False,100,50,20,Fuling Shaman Trophy,1,13
+TrophyGreydwarf,True,False,100,50,20,Greydwarf Trophy,1,13
+TrophyGreydwarfBrute,True,False,100,50,20,Greydwarf Brute Trophy,1,13
+TrophyGreydwarfShaman,True,False,100,50,20,Greydwarf Shaman Trophy,1,13
+TrophyGrowth,True,False,100,50,20,Growth Trophy,1,13
+TrophyHare,True,False,100,50,20,Hare Trophy,1,13
+TrophyHatchling,True,False,100,50,20,Drake Trophy,1,13
+TrophyLeech,True,False,100,50,20,Leech Trophy,1,13
+TrophyLox,True,False,100,50,20,Lox Trophy,1,13
+TrophyMorgen,True,False,100,50,20,Morgen Trophy,1,13
+TrophyNeck,True,False,100,50,20,Neck Trophy,1,13
+TrophySeeker,True,False,100,50,20,Seeker Trophy,1,13
+TrophySeekerBrute,True,False,100,50,20,Seeker Soldier Trophy,1,13
+TrophySeekerQueen,True,False,100,50,20,The Queen Trophy,1,13
+TrophySerpent,True,False,100,50,20,Serpent Trophy,1,13
+TrophySGolem,True,False,100,50,20,Stone Golem Trophy,1,13
+TrophySkeleton,True,False,100,50,20,Skeleton Trophy,1,13
+TrophySkeletonHildir,True,False,100,50,20,Brenna Trophy,1,13
+TrophySkeletonPoison,True,False,100,50,20,Rancid Remains Trophy,1,13
+TrophySurtling,True,False,100,50,20,Surtling Trophy,1,13
+TrophyTheElder,True,False,100,50,20,The Elder Trophy,1,13
+TrophyTick,True,False,100,50,20,Tick Trophy,1,13
+TrophyUlv,True,False,100,50,20,Ulv Trophy,1,13
+TrophyVolture,True,False,100,50,20,Volture Trophy,1,13
+TrophyWolf,True,False,100,50,20,Wolf Trophy,1,13
+TrophyWraith,True,False,100,50,20,Wraith Trophy,1,13
+Turnip,True,False,100,50,50,Turnip,1,1
+TurnipSeeds,True,False,100,50,100,Turnip Seeds,1,1
+TurnipStew,True,False,100,50,10,Turnip Stew,1,2
+TurretBolt,True,False,100,50,100,Black Metal Missile,1,23
+TurretBoltFlametal,True,False,100,50,100,Flametal Missile,1,23
+TurretBoltWood,True,False,100,50,100,Wooden Missile,1,23
+Vineberry,True,False,100,50,50,Vineberry Cluster,1,2
+VineberrySeeds,True,False,100,50,100,Vineberry Seeds,1,1
+VoltureEgg,True,False,100,50,20,Volture Egg,1,1
+VoltureMeat,True,False,100,50,20,Volture Meat,1,1
 Wishbone,True,False,100,50,1,Wishbone,1,18
 Wisp,True,False,100,50,50,Wisp,1,1
-WitheredBone,True,False,100,50,30,Withered bone,1,1
-WolfClaw,True,False,100,50,20,Fenris claw,1,1
-WolfFang,True,False,100,50,50,Wolf fang,1,1
-WolfHairBundle,True,False,100,50,50,Fenris hair,1,1
-WolfJerky,True,False,100,50,20,Wolf jerky,1,2
-WolfMeat,True,False,100,50,20,Wolf meat,1,1
-WolfMeatSkewer,True,False,100,50,20,Wolf skewer,1,2
-WolfPelt,True,False,100,50,50,Wolf pelt,1,1
+WitheredBone,True,False,100,50,30,Withered Bone,1,1
+WolfClaw,True,False,100,50,20,Fenris Claw,1,1
+WolfFang,True,False,100,50,50,Wolf Fang,1,1
+WolfHairBundle,True,False,100,50,50,Fenris Hair,1,1
+WolfJerky,True,False,100,50,20,Wolf Jerky,1,2
+WolfMeat,True,False,100,50,20,Wolf Meat,1,1
+WolfMeatSkewer,True,False,100,50,20,Wolf Skewer,1,2
+WolfPelt,True,False,100,50,50,Wolf Pelt,1,1
 Wood,True,False,100,50,50,Wood,1,1
-YagluthDrop,True,False,100,50,30,Torn spirit,1,1
-YggdrasilPorridge,True,False,100,50,10,Yggdrasil porridge,1,2
-YggdrasilWood,True,False,100,50,50,Yggdrasil wood,1,1
-YmirRemains,True,False,100,50,50,Ymir flesh,1,1
+YagluthDrop,True,False,100,50,30,Torn Spirit,1,1
+YggdrasilPorridge,True,False,100,50,10,Yggdrasil Porridge,1,2
+YggdrasilWood,True,False,100,50,50,Yggdrasil Wood,1,1
+YmirRemains,True,False,100,50,50,Ymir Flesh,1,1

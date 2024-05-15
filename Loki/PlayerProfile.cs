@@ -41,7 +41,7 @@ namespace Loki
 
             var playerStats = new PlayerStats();
 
-            // ToDo: if version != 38 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
+            // ToDo: if version != 39 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
             if (version >= 38)
             {
                 int statsCount = reader.ReadInt32();

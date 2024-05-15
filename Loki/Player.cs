@@ -15,7 +15,7 @@ namespace Loki
 {
     public class Player: INotifyPropertyChanged
     {
-        private const int Version = 26;
+        private const int Version = 27;
         private const int InventoryVersion = 106;
         private const int SkillVersion = 2;
 
@@ -260,6 +260,20 @@ namespace Loki
                 player._eitr = reader.ReadSingle();
             }
 
+            if (version < 27)
+            {
+                if (player._knownMaterials.Contains("$item_flametal"))
+                {
+                    player._knownMaterials.Remove("$item_flametal");
+                    player._knownMaterials.Add("$item_flametal_old");
+                }
+                if (player._knownMaterials.Contains("$item_flametalore"))
+                {
+                    player._knownMaterials.Remove("$item_flametalore");
+                    player._knownMaterials.Add("$item_flametalore_old");
+                }
+            }
+
             // Sanity check - compare with player data length provided.
             long amountRead = input.Position - playerDataStartPos;
             if (amountRead != expectedPlayerDataLength)
@@ -391,7 +405,7 @@ namespace Loki
             var version = reader.ReadInt32();
             var itemCount = reader.ReadInt32();
             var items = new List<Item>(itemCount);
-            if (version == 106)
+            if (version >= 106)
             {
                 for (int i = 0; i < itemCount; i++)
                 {

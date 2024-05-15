@@ -8,13 +8,14 @@ namespace Loki
         /// <summary>
         /// Version of PlayerProfile .fch data. This is the version of the saved file.
         /// </summary>
-        public const int ProfileVersion = 38;
+        public const int ProfileVersion = 39;
 
         /// <summary>
         /// These legacy versions are also considered compatible, in addition to <see cref="ProfileVersion"/>
         /// </summary>
         private static readonly int[] CompatibleProfileVersions =
         {
+            39,
             38,
             37,
             36,
