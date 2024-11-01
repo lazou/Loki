@@ -22,6 +22,9 @@
         Run,
         Swim,
         Fishing,
+        Cooking,
+        Farming,
+        Crafting,
         Ride = 110,
         All = 999
     }

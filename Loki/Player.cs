@@ -15,14 +15,13 @@ namespace Loki
 {
     public class Player: INotifyPropertyChanged
     {
-        private const int Version = 27;
+        private const int Version = 29;
         private const int InventoryVersion = 106;
         private const int SkillVersion = 2;
 
         private float _maxHealth;
         private float _curHealth;
         private float _maxStamina;
-        private bool _firstSpawn;
         private float _timeSinceDeath;
         private string _guardianPower;
         private float _guardianPowerCooldown;
@@ -136,20 +135,35 @@ namespace Loki
 
             var version = reader.ReadInt32();
 
+            var maxHealth = version >= 7 ? reader.ReadSingle() : 25f;  // ToDo: Verify default still are correct
+            var curHealth = reader.ReadSingle();
+            var maxStamina = version >= 10 ? reader.ReadSingle() : 100f; // ToDo: Verify default still are correct
+
+            // As of Player version 28 and Profile version 40 FirstSpawn is within profile part of save, it seems
+            if (version >= 8 && version < 28)
+            {
+                reader.ReadBoolean(); // Skip 
+            }
+
+            var timeSinceDeath = version >= 20 ? reader.ReadSingle() : 999999f;
+            var guardianPower = version >= 23 ? reader.ReadString() : string.Empty;
+            var guardianPowerCooldown = version >= 24 ? reader.ReadSingle() : default;
+
             var player = new Player
             {
-                _maxHealth = version >= 7 ? reader.ReadSingle() : 25f,
-                _curHealth = reader.ReadSingle(),
-                _maxStamina = version >= 10 ? reader.ReadSingle() : 100f,
-                _firstSpawn = version < 8 || reader.ReadBoolean(),
-                _timeSinceDeath = version >= 20 ? reader.ReadSingle() : 999999f,
-                _guardianPower = version >= 23 ? reader.ReadString() : string.Empty,
-                _guardianPowerCooldown = version >= 24 ? reader.ReadSingle() : default,
-                _shownTutorials = new List<string>(),
+                _maxHealth = maxHealth,
+                _curHealth = curHealth,
+                _maxStamina = maxStamina,                
+                _timeSinceDeath = timeSinceDeath,
+                _guardianPower = guardianPower,
+                _guardianPowerCooldown = guardianPowerCooldown,
             };
 
+            // Skip over 'ZDOID', long + uint 
             if (version == 2)
-                input.Position += 12; // Skip over 'ZDOID', long + uint 
+            {
+                input.Position += 12; 
+            }
 
             player._inventory = ReadInventory(input, true);
             player.UpdateInventorySlots();
@@ -314,8 +328,7 @@ namespace Loki
             writer.Write(Version);
             writer.Write(_maxHealth);
             writer.Write(_curHealth);
-            writer.Write(_maxStamina);
-            writer.Write(_firstSpawn);
+            writer.Write(_maxStamina);           
             writer.Write(_timeSinceDeath);
             writer.Write(_guardianPower);
             writer.Write(_guardianPowerCooldown);

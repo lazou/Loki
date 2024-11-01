@@ -79,11 +79,29 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Abjuration {
+            get {
+                return ResourceManager.GetString("Abjuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All.
         /// </summary>
         public static string All {
             get {
                 return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Alteration {
+            get {
+                return ResourceManager.GetString("Alteration", resourceCulture);
             }
         }
         
@@ -619,11 +637,38 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Conjuration {
+            get {
+                return ResourceManager.GetString("Conjuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Consumable.
         /// </summary>
         public static string Consumable {
             get {
                 return ResourceManager.GetString("Consumable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooking.
+        /// </summary>
+        public static string Cooking {
+            get {
+                return ResourceManager.GetString("Cooking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crafting.
+        /// </summary>
+        public static string Crafting {
+            get {
+                return ResourceManager.GetString("Crafting", resourceCulture);
             }
         }
         
@@ -682,6 +727,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Discipline {
+            get {
+                return ResourceManager.GetString("Discipline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Draugr fang.
         /// </summary>
         public static string Draugr_fang {
@@ -696,6 +750,24 @@ namespace Loki.Properties {
         public static string ElementalMagic {
             get {
                 return ResourceManager.GetString("ElementalMagic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Evocation {
+            get {
+                return ResourceManager.GetString("Evocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Farming.
+        /// </summary>
+        public static string Farming {
+            get {
+                return ResourceManager.GetString("Farming", resourceCulture);
             }
         }
         
@@ -763,6 +835,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string FireMagic {
+            get {
+                return ResourceManager.GetString("FireMagic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fish.
         /// </summary>
         public static string Fish {
@@ -804,6 +885,15 @@ namespace Loki.Properties {
         public static string Frost_arrow {
             get {
                 return ResourceManager.GetString("Frost arrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string FrostMagic {
+            get {
+                return ResourceManager.GetString("FrostMagic", resourceCulture);
             }
         }
         
@@ -867,6 +957,15 @@ namespace Loki.Properties {
         public static string Huntsman_bow {
             get {
                 return ResourceManager.GetString("Huntsman bow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Illusion {
+            get {
+                return ResourceManager.GetString("Illusion", resourceCulture);
             }
         }
         
@@ -1452,6 +1551,15 @@ namespace Loki.Properties {
         public static string Swords {
             get {
                 return ResourceManager.GetString("Swords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string test {
+            get {
+                return ResourceManager.GetString("test", resourceCulture);
             }
         }
         

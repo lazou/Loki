@@ -25,6 +25,7 @@ namespace Loki
         }
 
         public static PlayerProfile selectedPlayerProfile = null;
+        public static string explicitlyLoadThisFile = null;
 
         private static CharacterFile[] characterFiles;
 
@@ -33,6 +34,15 @@ namespace Loki
             var version = Assembly.GetExecutingAssembly().GetName().Version;
             Debug.Assert(version != null, nameof(version) + " != null");
             Title = $"{Title} v{version.Major}.{version.Minor}";
+
+            var args = Environment.GetCommandLineArgs();
+            explicitlyLoadThisFile = args.Length > 1 && Path.GetExtension(args[1]).ToLower() == ".fch" ? args[1] : null;
+            
+            if (!string.IsNullOrEmpty(explicitlyLoadThisFile))
+            {
+                ChkLoadBackupFiles.IsChecked = false;
+                ChkLoadBackupFiles.IsEnabled = false;
+            }
 
             try
             {

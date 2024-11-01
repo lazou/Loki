@@ -645,4 +645,40 @@
   <data name="{0} skills increased {1} percent" xml:space="preserve">
     <value>{0} skills increased ({1}%)</value>
   </data>
+  <data name="Abjuration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Alteration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conjuration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Discipline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Evocation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FireMagic" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FrostMagic" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Illusion" xml:space="preserve">
+    <value />
+  </data>
+  <data name="test" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Farming" xml:space="preserve">
+    <value>Farming</value>
+  </data>
+  <data name="Cooking" xml:space="preserve">
+    <value>Cooking</value>
+  </data>
+  <data name="Crafting" xml:space="preserve">
+    <value>Crafting</value>
+  </data>
 </root>

@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Windows;
 using Loki;
 
 namespace Loki
@@ -59,6 +60,10 @@ namespace Loki
 
         private static Dictionary<string, SharedItemData> ReadItemDataFromCsvFile(string fileName)
         {
+            if (!File.Exists(fileName))
+            {
+                fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+            }
             try
             {
                 using var reader = new StreamReader(fileName);

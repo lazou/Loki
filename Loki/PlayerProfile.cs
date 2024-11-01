@@ -18,6 +18,7 @@ namespace Loki
         public string PlayerName { get; set; }
         public string StartSeed { get; set; }
         public DateTime DateCreated { get; set; }
+        public bool FirstSpawn { get; set; }
         public bool UsedCheats { get; set; }
         public Dictionary<string, float> KnownWorlds { get; set; }
         public Dictionary<string, float> KnownWorldKeys { get; set; }
@@ -41,7 +42,7 @@ namespace Loki
 
             var playerStats = new PlayerStats();
 
-            // ToDo: if version != 39 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
+            // ToDo: if version != 41 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
             if (version >= 38)
             {
                 int statsCount = reader.ReadInt32();
@@ -57,7 +58,7 @@ namespace Loki
                 playerStats[PlayerStatType.CraftsOrUpgrades] = reader.ReadInt32();
                 playerStats[PlayerStatType.Builds] = reader.ReadInt32();
             }
-
+            var firstSpawn = version >= 40 ? reader.ReadBoolean() : default;
             int worldCount = reader.ReadInt32();
             var worldData = new List<(long, WorldPlayerData)>();
             for (var i = 0; i < worldCount; i++)
@@ -141,6 +142,7 @@ namespace Loki
                 PlayerName = playerName,
                 StartSeed = startSeed,
                 DateCreated = dateCreated,
+                FirstSpawn = firstSpawn,
                 UsedCheats = usedCheats,
                 KnownWorlds = knownWorlds,
                 KnownWorldKeys = knownWorldKeys,
@@ -167,7 +169,7 @@ namespace Loki
             {
                 writer.Write(Stats[(PlayerStatType)i]);
             }
-
+            writer.Write(FirstSpawn);
             writer.Write(_worldData.Count);
             foreach (var (key, worldData) in _worldData)
             {

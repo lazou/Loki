@@ -50,9 +50,20 @@ namespace Loki
 
         public static CharacterFile[] LoadCharacterFiles()
         {
-            string localLowPath = Shell32.GetKnownFolderPath(Shell32.LocalLowId);
-            string charactersPath = Path.Join(localLowPath, @"IronGate\Valheim\characters_local");
-            return Directory.EnumerateFiles(charactersPath, "*.fch").Select(FromPath).ToArray();
+
+            // Explicit load of a character file            
+            if (!string.IsNullOrEmpty(MainWindow.explicitlyLoadThisFile))
+            {
+                // File to open given by command line arg (ie "open with -> Loki")
+                return new CharacterFile[] { FromPath(MainWindow.explicitlyLoadThisFile) };
+            }
+            else
+            {
+                // Standard behaviour: open all character files in Valheim local save directory
+                string localLowPath = Shell32.GetKnownFolderPath(Shell32.LocalLowId);
+                string charactersPath = Path.Join(localLowPath, @"IronGate\Valheim\characters_local");
+                return Directory.EnumerateFiles(charactersPath, "*.fch").Select(FromPath).ToArray();
+            }
         }
 
         public static CharacterFile FromPath(string characterFilePath)
