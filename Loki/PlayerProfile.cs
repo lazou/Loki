@@ -23,6 +23,9 @@ namespace Loki
         public Dictionary<string, float> KnownWorlds { get; set; }
         public Dictionary<string, float> KnownWorldKeys { get; set; }
         public Dictionary<string, float> KnownCommands { get; set; }
+        public Dictionary<string, float> EnemyStats { get; set; }
+        public Dictionary<string, float> ItemPickupStats { get; set; }
+        public Dictionary<string, float> ItemCraftStats { get; set; }
         public PlayerStats Stats { get; private set; }
         public Player Player { get; private set; }
         private List<(long, WorldPlayerData)> _worldData;
@@ -42,7 +45,7 @@ namespace Loki
 
             var playerStats = new PlayerStats();
 
-            // ToDo: if version != 41 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
+            // ToDo: if version != 42 "create backup" (just a note: this is what Valheim does, maybe what we want in Loki)
             if (version >= 38)
             {
                 int statsCount = reader.ReadInt32();
@@ -84,6 +87,9 @@ namespace Loki
             var knownWorlds = new Dictionary<string, float>();
             var knownWorldKeys = new Dictionary<string, float>();
             var knownCommands = new Dictionary<string, float>();
+            var enemyStats = new Dictionary<string, float>();
+            var itemPickupStats = new Dictionary<string, float>();
+            var itemCraftStats = new Dictionary<string, float>();
             DateTime dateCreated;
 
             if (version >= 38)
@@ -108,12 +114,34 @@ namespace Loki
                 {
                     knownCommands[reader.ReadString()] = reader.ReadSingle();
                 }
+
+                if (version >= 42)
+                {
+                    int statsCount = reader.ReadInt32();
+
+                    for (int i = 0;i < statsCount; i++)
+                    {
+                        enemyStats[reader.ReadString()] = reader.ReadSingle();
+                    }
+                    statsCount = reader.ReadInt32();
+
+                    for (int i = 0; i < statsCount; i++)
+                    {
+                        itemPickupStats[reader.ReadString()] = reader.ReadSingle();
+                    }
+
+                    statsCount = reader.ReadInt32();
+                    for (int i = 0; i < statsCount; i++)
+                    {
+                        itemCraftStats[reader.ReadString()] = reader.ReadSingle();
+                    }
+                }
             }
             else
             {
                 dateCreated = new DateTime(2021, 2, 2);
             }
-            var player = reader.ReadBoolean() ? Player.Read(input, true) : default;
+            var player = reader.ReadBoolean() ? Player.Read(input, true) : default;            
 
             // Verify we read all the data and haven't skipped anything.
             var dataRead = input.Position - startPosition;
@@ -142,11 +170,15 @@ namespace Loki
                 PlayerName = playerName,
                 StartSeed = startSeed,
                 DateCreated = dateCreated,
-                FirstSpawn = firstSpawn,
+                // Instead of reusing reader stream for player like valheim do, we read legacy value while at it in Player
+                FirstSpawn = version < 40 && player != null ? player.LegacyFirstSpawn : firstSpawn,
                 UsedCheats = usedCheats,
                 KnownWorlds = knownWorlds,
                 KnownWorldKeys = knownWorldKeys,
                 KnownCommands = knownCommands,
+                EnemyStats = enemyStats,
+                ItemPickupStats = itemPickupStats,
+                ItemCraftStats = itemCraftStats,
                 _worldData = worldData,
                 Player = player,
             };
@@ -212,10 +244,31 @@ namespace Loki
                 writer.Write(knownCommand.Value);
             }
 
+            writer.Write(EnemyStats.Count);
+            foreach (KeyValuePair<string, float> enemyStats in EnemyStats)
+            {
+                writer.Write(enemyStats.Key);
+                writer.Write(enemyStats.Value);
+            }
+
+            writer.Write(ItemPickupStats.Count);
+            foreach (KeyValuePair<string, float> itemPickupStats in ItemPickupStats)
+            {
+                writer.Write(itemPickupStats.Key);
+                writer.Write(itemPickupStats.Value);
+            }
+
+            writer.Write(ItemCraftStats.Count);
+            foreach (KeyValuePair<string, float> itemCraftStats in ItemCraftStats)
+            {
+                writer.Write(itemCraftStats.Key);
+                writer.Write(itemCraftStats.Value);
+            }
+
             writer.Write(Player != null);
             if (Player != null)
             {
-                output.Position += 4;
+                output.Position += 4; // Make room for player data size
                 var playerOffset = output.Position;
                 Player.Write(output, true);
 

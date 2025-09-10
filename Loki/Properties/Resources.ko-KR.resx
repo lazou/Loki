@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Abjuration" xml:space="preserve">
-    <value>포기</value>
-  </data>
   <data name="All" xml:space="preserve">
     <value>모두</value>
-  </data>
-  <data name="Alteration" xml:space="preserve">
-    <value>변경</value>
   </data>
   <data name="Amber" xml:space="preserve">
     <value>호박석</value>
@@ -285,9 +279,6 @@
   <data name="Clubs" xml:space="preserve">
     <value>둔기</value>
   </data>
-  <data name="Conjuration" xml:space="preserve">
-    <value>주문</value>
-  </data>
   <data name="Consumable" xml:space="preserve">
     <value>소모품</value>
   </data>
@@ -303,14 +294,8 @@
   <data name="Deaths" xml:space="preserve">
     <value>죽음</value>
   </data>
-  <data name="Discipline" xml:space="preserve">
-    <value>규율</value>
-  </data>
   <data name="Draugr fang" xml:space="preserve">
     <value>드라우그 송곳니</value>
-  </data>
-  <data name="Evocation" xml:space="preserve">
-    <value>환기</value>
   </data>
   <data name="fart" xml:space="preserve">
     <value>fart</value>
@@ -327,9 +312,6 @@
   <data name="Fire resistance barley wine" xml:space="preserve">
     <value>불 저항의 보리주</value>
   </data>
-  <data name="FireMagic" xml:space="preserve">
-    <value>불 마법</value>
-  </data>
   <data name="Flint axe" xml:space="preserve">
     <value>부싯돌 도끼</value>
   </data>
@@ -338,9 +320,6 @@
   </data>
   <data name="Frost arrow" xml:space="preserve">
     <value>냉기 화살</value>
-  </data>
-  <data name="FrostMagic" xml:space="preserve">
-    <value>얼음 마법</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>일반</value>
@@ -362,9 +341,6 @@
   </data>
   <data name="Huntsman bow" xml:space="preserve">
     <value>사냥꾼 활</value>
-  </data>
-  <data name="Illusion" xml:space="preserve">
-    <value>환각</value>
   </data>
   <data name="Inventory" xml:space="preserve">
     <value>인벤토리</value>
@@ -546,9 +522,6 @@
   <data name="Swords" xml:space="preserve">
     <value>검</value>
   </data>
-  <data name="test" xml:space="preserve">
-    <value>test</value>
-  </data>
   <data name="Tool" xml:space="preserve">
     <value>도구</value>
   </data>
@@ -605,5 +578,39 @@
   </data>
   <data name="Wood Cutting" xml:space="preserve">
     <value>벌목</value>
+  </data>
+  <data name="Abjuration" xml:space="preserve">
+    <value>포기</value>
+  </data>
+  <data name="Alteration" xml:space="preserve">
+    <value>변경</value>
+  </data>
+  <data name="Conjuration" xml:space="preserve">
+    <value>주문</value>
+  </data>
+  <data name="Discipline" xml:space="preserve">
+    <value>규율</value>
+  </data>
+  <data name="Evocation" xml:space="preserve">
+    <value>환기</value>
+  </data>
+  <data name="FireMagic" xml:space="preserve">
+    <value>불 마법</value>
+  </data>
+  <data name="FrostMagic" xml:space="preserve">
+    <value>얼음 마법</value>
+  </data>
+  <data name="Illusion" xml:space="preserve">
+    <value>환각</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Dodge" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Trinket" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

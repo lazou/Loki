@@ -736,6 +736,15 @@ namespace Loki.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dodge.
+        /// </summary>
+        public static string Dodge {
+            get {
+                return ResourceManager.GetString("Dodge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Draugr fang.
         /// </summary>
         public static string Draugr_fang {
@@ -1578,6 +1587,15 @@ namespace Loki.Properties {
         public static string Torch {
             get {
                 return ResourceManager.GetString("Torch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trinket.
+        /// </summary>
+        public static string Trinket {
+            get {
+                return ResourceManager.GetString("Trinket", resourceCulture);
             }
         }
         

@@ -22,6 +22,7 @@ namespace Loki
         private float _maxHealth;
         private float _curHealth;
         private float _maxStamina;
+        public bool LegacyFirstSpawn { get; private set; }
         private float _timeSinceDeath;
         private string _guardianPower;
         private float _guardianPowerCooldown;
@@ -137,12 +138,13 @@ namespace Loki
 
             var maxHealth = version >= 7 ? reader.ReadSingle() : 25f;  // ToDo: Verify default still are correct
             var curHealth = reader.ReadSingle();
-            var maxStamina = version >= 10 ? reader.ReadSingle() : 100f; // ToDo: Verify default still are correct
+            var maxStamina = version >= 10 ? reader.ReadSingle() : 100f; // ToDo: Verify default still are correct           
 
             // As of Player version 28 and Profile version 40 FirstSpawn is within profile part of save, it seems
+            var legacyFirstSpawn = false;
             if (version >= 8 && version < 28)
             {
-                reader.ReadBoolean(); // Skip 
+                legacyFirstSpawn = reader.ReadBoolean(); // no skip, pass on to profile (but do not use in player)
             }
 
             var timeSinceDeath = version >= 20 ? reader.ReadSingle() : 999999f;
@@ -153,7 +155,8 @@ namespace Loki
             {
                 _maxHealth = maxHealth,
                 _curHealth = curHealth,
-                _maxStamina = maxStamina,                
+                _maxStamina = maxStamina,            
+                LegacyFirstSpawn = legacyFirstSpawn,
                 _timeSinceDeath = timeSinceDeath,
                 _guardianPower = guardianPower,
                 _guardianPowerCooldown = guardianPowerCooldown,
@@ -418,7 +421,7 @@ namespace Loki
             var version = reader.ReadInt32();
             var itemCount = reader.ReadInt32();
             var items = new List<Item>(itemCount);
-            if (version >= 106)
+            if (version == 106) // ToDo: check if changed from <= in 0.221.4 (Call To Arms) update or wrong aldready?
             {
                 for (int i = 0; i < itemCount; i++)
                 {

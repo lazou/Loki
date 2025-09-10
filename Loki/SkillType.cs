@@ -25,6 +25,7 @@
         Cooking,
         Farming,
         Crafting,
+        Dodge,
         Ride = 110,
         All = 999
     }

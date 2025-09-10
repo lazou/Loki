@@ -681,4 +681,10 @@
   <data name="Crafting" xml:space="preserve">
     <value>Crafting</value>
   </data>
+  <data name="Dodge" xml:space="preserve">
+    <value>Dodge</value>
+  </data>
+  <data name="Trinket" xml:space="preserve">
+    <value>Trinket</value>
+  </data>
 </root>

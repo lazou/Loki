@@ -34,6 +34,7 @@ namespace Loki
         Fish = 21,
         TwoHandedWeaponLeft = 22,
         AmmoNonEquipable = 23,
+        Trinket = 24,
     }
 
     public class SharedItemData

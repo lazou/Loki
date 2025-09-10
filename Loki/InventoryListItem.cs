@@ -53,6 +53,7 @@ namespace Loki
                 ItemType.Fish => Loki.Properties.Resources.Fish,
                 ItemType.TwoHandedWeaponLeft => Loki.Properties.Resources.Two_Handed_Weapon_Left,
                 ItemType.AmmoNonEquipable => Loki.Properties.Resources.Ammo_Non_Equipable,
+                ItemType.Trinket => Loki.Properties.Resources.Trinket,
                 _ => Loki.Properties.Resources.Unknown,
             };
             return new InventoryListItem(displayName, category, itemData);
