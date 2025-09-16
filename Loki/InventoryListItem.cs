@@ -43,13 +43,17 @@ namespace Loki
                 ItemType.Legs => Loki.Properties.Resources.Legs,
                 ItemType.Hands => Loki.Properties.Resources.Hands,
                 ItemType.Trophy => Loki.Properties.Resources.Trophy,
-                ItemType.TwoHandedWeapon => Loki.Properties.Resources.Trophy,
+                ItemType.TwoHandedWeapon => Loki.Properties.Resources.Two_Handed_Weapon,
                 ItemType.Torch => Loki.Properties.Resources.Torch,
                 ItemType.Misc => Loki.Properties.Resources.Miscellaneous,
                 ItemType.Shoulder => Loki.Properties.Resources.Shoulder,
                 ItemType.Utility => Loki.Properties.Resources.Utility,
                 ItemType.Tool => Loki.Properties.Resources.Tool,
                 ItemType.AttachAtgeir => Loki.Properties.Resources.Attach_Atgeir,
+                ItemType.Fish => Loki.Properties.Resources.Fish,
+                ItemType.TwoHandedWeaponLeft => Loki.Properties.Resources.Two_Handed_Weapon_Left,
+                ItemType.AmmoNonEquipable => Loki.Properties.Resources.Ammo_Non_Equipable,
+                ItemType.Trinket => Loki.Properties.Resources.Trinket,
                 _ => Loki.Properties.Resources.Unknown,
             };
             return new InventoryListItem(displayName, category, itemData);

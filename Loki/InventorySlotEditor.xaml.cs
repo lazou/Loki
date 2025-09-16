@@ -22,19 +22,48 @@ namespace Loki
         {
             if (e.Data.GetData(typeof(SharedItemData)) is SharedItemData itemData)
             {
+                // drop from item picker
                 if (this.DataContext is InventorySlot slot)
                 {
                     var customData = new List<(string, string)>();
                     slot.Item = new Item(itemData.ItemName, itemData.MaxStack, (float)itemData.MaxDurability, slot.Position,
-                        false, 1, 0, MainWindow.selectedPlayerProfile.PlayerId, MainWindow.selectedPlayerProfile.PlayerName, customData);
+                        false, 1, 0, MainWindow.selectedPlayerProfile.PlayerId, MainWindow.selectedPlayerProfile.PlayerName, customData, 0, false);
+                }
+            }
+            else if (e.Data.GetData(typeof(InventorySlot)) is InventorySlot sourceSlot)
+            {
+                // drop from inventory slot
+                if (this.DataContext is InventorySlot slot && sourceSlot != slot)
+                {
+                    var targetSlotItem = slot.Item;
+                    slot.Item = sourceSlot.Item;
+                    sourceSlot.Item = targetSlotItem;
+                }
+            }
+        }
+
+        private void BorderMouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Source is TextBox)
+            {
+                // TextBox has its own Drag&Drop functionality and would raise an InvalidOperationException
+                return;
+            }
+
+            if (sender is FrameworkElement element && e.LeftButton == MouseButtonState.Pressed)
+            {
+                if (element.DataContext is InventorySlot slot && slot.Item != null)
+                {
+                    var data = new DataObject(slot);
+                    DragDrop.DoDragDrop(element, data, DragDropEffects.Move);
                 }
             }
         }
 
         private void StackEditPreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (sender is TextBox {IsKeyboardFocusWithin: false} txtStack) 
-            {  
+            if (sender is TextBox { IsKeyboardFocusWithin: false } txtStack)
+            {
                 txtStack.SelectAll();
                 txtStack.Focus();
                 e.Handled = true;

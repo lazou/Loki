@@ -129,6 +129,9 @@
   <data name="Ammo" xml:space="preserve">
     <value>Ammo</value>
   </data>
+  <data name="Ammo Non Equipable" xml:space="preserve">
+    <value>Ammo Non Equipable</value>
+  </data>
   <data name="Ancient seed" xml:space="preserve">
     <value>Ancient seed</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="Bloodbag" xml:space="preserve">
     <value>Bloodbag</value>
   </data>
+  <data name="BloodMagic" xml:space="preserve">
+    <value>Blood magic</value>
+  </data>
   <data name="Blueberries" xml:space="preserve">
     <value>Blueberries</value>
   </data>
@@ -194,6 +200,12 @@
   </data>
   <data name="Bone fragments" xml:space="preserve">
     <value>Bone fragments</value>
+  </data>
+  <data name="BoolFalseText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="BoolTrueText" xml:space="preserve">
+    <value>Yes</value>
   </data>
   <data name="Bow" xml:space="preserve">
     <value>Bow</value>
@@ -273,6 +285,12 @@
   <data name="B_Thick 1" xml:space="preserve">
     <value>Thick 1</value>
   </data>
+  <data name="Character Reverted" xml:space="preserve">
+    <value>Character Reverted</value>
+  </data>
+  <data name="Character Saved" xml:space="preserve">
+    <value>Character Saved</value>
+  </data>
   <data name="Chest" xml:space="preserve">
     <value>Chest</value>
   </data>
@@ -284,6 +302,12 @@
   </data>
   <data name="Crafts" xml:space="preserve">
     <value>Crafts</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Crossbow" xml:space="preserve">
+    <value>Crossbow</value>
   </data>
   <data name="Crude bow" xml:space="preserve">
     <value>Crude bow</value>
@@ -297,11 +321,20 @@
   <data name="Draugr fang" xml:space="preserve">
     <value>Draugr fang</value>
   </data>
+  <data name="ElementalMagic" xml:space="preserve">
+    <value>Elemental magic</value>
+  </data>
   <data name="fart" xml:space="preserve">
     <value>fart</value>
   </data>
   <data name="Female" xml:space="preserve">
     <value>Female</value>
+  </data>
+  <data name="Fill stacks" xml:space="preserve">
+    <value>Fill stacks</value>
+  </data>
+  <data name="Filled {0} stacks" xml:space="preserve">
+    <value>Filled {0} stacks</value>
   </data>
   <data name="Finewood bow" xml:space="preserve">
     <value>Finewood bow</value>
@@ -312,8 +345,11 @@
   <data name="Fire resistance barley wine" xml:space="preserve">
     <value>Fire resistance barley wine</value>
   </data>
-  <data name="FireMagic" xml:space="preserve">
-    <value>FireMagic</value>
+  <data name="Fish" xml:space="preserve">
+    <value>Fish</value>
+  </data>
+  <data name="Fishing" xml:space="preserve">
+    <value>Fishing</value>
   </data>
   <data name="Flint axe" xml:space="preserve">
     <value>Flint axe</value>
@@ -323,9 +359,6 @@
   </data>
   <data name="Frost arrow" xml:space="preserve">
     <value>Frost arrow</value>
-  </data>
-  <data name="FrostMagic" xml:space="preserve">
-    <value>FrostMagic</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>General</value>
@@ -402,6 +435,9 @@
   <data name="Model" xml:space="preserve">
     <value>Model</value>
   </data>
+  <data name="Modify all" xml:space="preserve">
+    <value>Modify all</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -459,6 +495,15 @@
   <data name="Rag tunic" xml:space="preserve">
     <value>Rag tunic</value>
   </data>
+  <data name="Repair items" xml:space="preserve">
+    <value>Repair items</value>
+  </data>
+  <data name="Repaired {0} items" xml:space="preserve">
+    <value>Repaired {0} items</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
   <data name="Revert" xml:space="preserve">
     <value>Revert</value>
   </data>
@@ -497,6 +542,9 @@
   </data>
   <data name="Skills" xml:space="preserve">
     <value>Skills</value>
+  </data>
+  <data name="Skills_tab_instruction" xml:space="preserve">
+    <value>NOTE: You can click and drag to re-order the skills</value>
   </data>
   <data name="Skin Colour" xml:space="preserve">
     <value>Skin Colour</value>
@@ -546,11 +594,17 @@
   <data name="Two Handed Weapon" xml:space="preserve">
     <value>Two Handed Weapon</value>
   </data>
+  <data name="Two Handed Weapon Left" xml:space="preserve">
+    <value>Two Handed Weapon Left</value>
+  </data>
   <data name="Unarmed" xml:space="preserve">
     <value>Unarmed</value>
   </data>
   <data name="Unknown" xml:space="preserve">
     <value>Unknown</value>
+  </data>
+  <data name="Used cheats" xml:space="preserve">
+    <value>Used cheats</value>
   </data>
   <data name="Utility" xml:space="preserve">
     <value>Utility</value>
@@ -584,5 +638,53 @@
   </data>
   <data name="Wood Cutting" xml:space="preserve">
     <value>Wood Cutting</value>
+  </data>
+  <data name="{0} skills decreased {1} percent" xml:space="preserve">
+    <value>{0} skills decreased ({1}%)</value>
+  </data>
+  <data name="{0} skills increased {1} percent" xml:space="preserve">
+    <value>{0} skills increased ({1}%)</value>
+  </data>
+  <data name="Abjuration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Alteration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conjuration" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Discipline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Evocation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FireMagic" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FrostMagic" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Illusion" xml:space="preserve">
+    <value />
+  </data>
+  <data name="test" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Farming" xml:space="preserve">
+    <value>Farming</value>
+  </data>
+  <data name="Cooking" xml:space="preserve">
+    <value>Cooking</value>
+  </data>
+  <data name="Crafting" xml:space="preserve">
+    <value>Crafting</value>
+  </data>
+  <data name="Dodge" xml:space="preserve">
+    <value>Dodge</value>
+  </data>
+  <data name="Trinket" xml:space="preserve">
+    <value>Trinket</value>
   </data>
 </root>

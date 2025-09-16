@@ -25,6 +25,9 @@ namespace Loki
         }
 
         public static PlayerProfile selectedPlayerProfile = null;
+        public static string explicitlyLoadThisFile = null;
+
+        private static CharacterFile[] characterFiles;
 
         private async void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
@@ -32,16 +35,38 @@ namespace Loki
             Debug.Assert(version != null, nameof(version) + " != null");
             Title = $"{Title} v{version.Major}.{version.Minor}";
 
+            var args = Environment.GetCommandLineArgs();
+            explicitlyLoadThisFile = args.Length > 1 && Path.GetExtension(args[1]).ToLower() == ".fch" ? args[1] : null;
+            
+            if (!string.IsNullOrEmpty(explicitlyLoadThisFile))
+            {
+                ChkLoadBackupFiles.IsChecked = false;
+                ChkLoadBackupFiles.IsEnabled = false;
+            }
+
             try
             {
-                CharacterFiles = await Task.Run(CharacterFile.LoadCharacterFiles);
-                SelectedCharacterFile = CharacterFiles.FirstOrDefault();
+                characterFiles = await Task.Run(CharacterFile.LoadCharacterFiles);
+                RefreshCharacterFiles((bool)ChkLoadBackupFiles.IsChecked);
                 CommandManager.InvalidateRequerySuggested();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void RefreshCharacterFiles(bool loadBackups)
+        {
+            if (loadBackups)
+            {
+                CharacterFiles = characterFiles;
+            }
+            else
+            {
+                CharacterFiles = characterFiles.Where(f => !f.FilePath.Contains("backup", StringComparison.InvariantCultureIgnoreCase)).ToArray();                
+            }
+            SelectedCharacterFile = CharacterFiles.FirstOrDefault();
         }
 
         public static readonly DependencyProperty ProfileProperty = DependencyProperty.Register(
@@ -151,7 +176,7 @@ namespace Loki
                 });
 
                 character.PlayerName = Profile.PlayerName;
-                ShowNotification("Character Saved");
+                ShowNotification(Loki.Properties.Resources.Character_Saved);
             }
             catch (Exception ex)
             {
@@ -181,12 +206,75 @@ namespace Loki
         private void RevertExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             LoadProfile(SelectedCharacterFile);
-            ShowNotification("Character Reverted");
+            ShowNotification(Loki.Properties.Resources.Character_Reverted);
         }
 
         private void SaveExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             SaveProfile(SelectedCharacterFile);
+        }
+
+        private void CanModifyAllSkillsExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Skills.Count > 0;
+        }
+
+        private void ModifyAllSkillsExecuted(Object sender, ExecutedRoutedEventArgs e)
+        {
+            var percent = (float)ModifyAllSkillsSlider.Value;
+            var factor = 1f + 0.01f * percent;
+            var count = 0;
+            foreach (var skill in Profile.Player.Skills)
+            {
+                if (skill.Level > 0f)
+                {
+                    skill.Level *= factor;
+                    count++;
+                }
+            }
+
+            var textToFormat = percent < 0f
+                ? Loki.Properties.Resources._0__skills_decreased__1__percent
+                : Loki.Properties.Resources._0__skills_increased__1__percent;
+            ShowNotification(string.Format(textToFormat, count, percent.ToString("+0;-#")));
+        }
+
+        private void CanRepairInventoryItemsExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Inventory.Slots.Any(slot => slot.RepairItem.CanExecute(null));
+        }
+
+        private void RepairInventoryItemsExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            int count = 0;
+            Profile?.Player.Inventory.Slots.ForEach(slot =>
+            {
+                if (slot.RepairItem.CanExecute(null))
+                {
+                    slot.RepairItem.Execute(null);
+                    count++;
+                }
+            });
+            ShowNotification(string.Format(Loki.Properties.Resources.Repaired__0__items, count));
+        }
+
+        private void CanFillInventoryStacksExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Profile != null && Profile.Player.Inventory.Slots.Any(slot => slot.FillStack.CanExecute(null));
+        }
+
+        private void FillInventoryStacksExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            int count = 0;
+            Profile?.Player.Inventory.Slots.ForEach(slot =>
+            {
+                if (slot.FillStack.CanExecute(null))
+                {
+                    slot.FillStack.Execute(null);
+                    count++;
+                }
+            });
+            ShowNotification(string.Format(Loki.Properties.Resources.Filled__0__stacks, count));
         }
 
         private void ItemPickerItemMouseMove(object sender, MouseEventArgs e)
@@ -246,6 +334,27 @@ namespace Loki
                 e.Accepted = filterItems.Any(filterItem =>
                     item.Name.Contains(filterItem, StringComparison.OrdinalIgnoreCase));
             }
+        }
+
+        private void ModifyAllSkillsSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            ModifyAllSkillsText.Text = $"{(e.NewValue > 0 ? "+" : "")}{e.NewValue:F0}%";
+            ModifyAllSkillsButton.IsEnabled = e.NewValue != 0d;
+        }
+
+        private void ModifyAllSkillsReset_Clicked(object sender, RoutedEventArgs e)
+        {
+            ModifyAllSkillsSlider.Value = 5;
+        }
+
+        private void ChkLoadBackupFiles_Checked(object sender, RoutedEventArgs e)
+        {
+            RefreshCharacterFiles(true);
+        }
+
+        private void ChkLoadBackupFiles_Unchecked(object sender, RoutedEventArgs e)
+        {
+            RefreshCharacterFiles(false);
         }
     }
 }

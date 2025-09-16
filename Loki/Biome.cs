@@ -12,6 +12,6 @@
         DeepNorth = 64,
         Ocean = 256,
         Mistlands = 512,
-        BiomesMax = 513,
+        All = 895,
     }
 }

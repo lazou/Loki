@@ -1,3 +1,8 @@
+# NOTE: This is a fork of the official repo
+
+- Updates to add compatibility with newer Valheim patches based on fork https://github.com/jensbrak/Loki/tree/master
+- Ability to move inventory items via drag&drop (https://github.com/Wufflez/Loki/pull/37)
+
 # Loki - Valheim Character Editor
 
 This program allows editing the character files for the game Valheim (.fch)
@@ -50,11 +55,3 @@ It's recommended to leave the backup option enabled.
 
 Backups are created in `%LOCALAPPDATA%\TwoThreeSix\Loki\CharacterBackups`
 
-## Coming Next
-
-- World Data management (e.g. trim out bloat from old worlds)
-- More tooltips & in app help
-- Installer
-- Detect game running and warn user (game could save over file at any point)
-- Dark theme to protect sensitive gamer eyes
-- New application icon
