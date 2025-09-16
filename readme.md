@@ -1,12 +1,7 @@
 # NOTE: This is a fork of the official repo
-- Updates here have not been pulled to official repo (mainly due to inactivity there)
-- Updates here focus primarily on maintaining compability with Valheim 
-- Any requests or questions should be in official repo
 
-_If using a custom release from this fork, read the release notes carefully first._
-
-__Credits to Wufflez for this app.__ 
-(I just followed along the ride for a while, as a result of curiousity about Valheim/Unity internal workings more than anything else. WPF is not my cup of tea and a bit away from my comfort zone to be honest).
+- Updates to add compatibility with newer Valheim patches based on fork https://github.com/jensbrak/Loki/tree/master
+- Ability to move inventory items via drag&drop (https://github.com/Wufflez/Loki/pull/37)
 
 # Loki - Valheim Character Editor
 
@@ -60,11 +55,3 @@ It's recommended to leave the backup option enabled.
 
 Backups are created in `%LOCALAPPDATA%\TwoThreeSix\Loki\CharacterBackups`
 
-## Coming Next
-
-- World Data management (e.g. trim out bloat from old worlds)
-- More tooltips & in app help
-- Installer
-- Detect game running and warn user (game could save over file at any point)
-- Dark theme to protect sensitive gamer eyes
-- New application icon
