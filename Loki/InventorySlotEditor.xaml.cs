@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
+using System.Xml.Linq;
 
 namespace Loki
 {
@@ -26,8 +27,18 @@ namespace Loki
                 if (this.DataContext is InventorySlot slot)
                 {
                     var customData = new List<(string, string)>();
-                    slot.Item = new Item(itemData.ItemName, itemData.MaxStack, (float)itemData.MaxDurability, slot.Position,
-                        false, 1, 0, MainWindow.selectedPlayerProfile.PlayerId, MainWindow.selectedPlayerProfile.PlayerName, customData, 0, false);
+
+                    var crafterId = 0l;
+                    var crafterName = "";
+
+                    // materials can't have crafter info
+                    if (itemData.ItemType != ItemType.Material)
+                    {
+                        crafterId = MainWindow.selectedPlayerProfile.PlayerId;
+                        crafterName = MainWindow.selectedPlayerProfile.PlayerName;
+                    }
+
+                    slot.Item = new Item(itemData.ItemName, itemData.MaxStack, (float)itemData.MaxDurability, slot.Position, false, 1, 0, crafterId, crafterName, customData, 0, false);
                 }
             }
             else if (e.Data.GetData(typeof(InventorySlot)) is InventorySlot sourceSlot)
