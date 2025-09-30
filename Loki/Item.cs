@@ -55,7 +55,7 @@ namespace Loki
             }
         }
 
-        public Vector2i Pos { get; }
+        public Vector2i Pos { set; get; }
         public bool Equiped { get; }
         public int Variant { get; }
         public long CrafterId { 

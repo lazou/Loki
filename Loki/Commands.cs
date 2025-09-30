@@ -8,7 +8,7 @@ namespace Loki
             new RoutedUICommand("Revert", nameof(RevertCharacter), typeof(Commands));
 
         public static RoutedUICommand SaveCharacter =
-            new RoutedUICommand("Save", nameof(RevertCharacter), typeof(Commands));
+            new RoutedUICommand("Save", nameof(SaveCharacter), typeof(Commands));
 
         public static RoutedUICommand RestoreCharacter =
             new RoutedUICommand("Restore", nameof(RestoreCharacter), typeof(Commands));
@@ -20,6 +20,6 @@ namespace Loki
             new RoutedUICommand("RepairItems", nameof(RepairInventoryItems), typeof(Commands));
 
         public static RoutedUICommand FillInventoryStacks =
-            new RoutedUICommand("FillStacks", nameof(RepairInventoryItems), typeof(Commands));
+            new RoutedUICommand("FillStacks", nameof(FillInventoryStacks), typeof(Commands));
     }
 }

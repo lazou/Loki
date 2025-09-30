@@ -44,11 +44,21 @@ namespace Loki
             else if (e.Data.GetData(typeof(InventorySlot)) is InventorySlot sourceSlot)
             {
                 // drop from inventory slot
-                if (this.DataContext is InventorySlot slot && sourceSlot != slot)
+                if (this.DataContext is InventorySlot targetSlot && sourceSlot != targetSlot)
                 {
-                    var targetSlotItem = slot.Item;
-                    slot.Item = sourceSlot.Item;
+                    var sourceSlotItem = sourceSlot.Item;
+                    var targetSlotItem = targetSlot.Item;
+
+                    // switch ui slots
+                    targetSlot.Item = sourceSlotItem;
                     sourceSlot.Item = targetSlotItem;
+
+                    // update positions in items
+                    sourceSlotItem.Pos = targetSlot.Position;
+                    if (targetSlotItem != null)
+                    {
+                        targetSlotItem.Pos = sourceSlot.Position;
+                    }
                 }
             }
         }
