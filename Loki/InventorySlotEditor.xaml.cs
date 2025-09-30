@@ -31,8 +31,8 @@ namespace Loki
                     var crafterId = 0l;
                     var crafterName = "";
 
-                    // materials can't have crafter info
-                    if (itemData.ItemType != ItemType.Material)
+                    // materials & misc items can't have crafter info
+                    if (itemData.ItemType != ItemType.Material && itemData.ItemType != ItemType.Misc)
                     {
                         crafterId = MainWindow.selectedPlayerProfile.PlayerId;
                         crafterName = MainWindow.selectedPlayerProfile.PlayerName;
