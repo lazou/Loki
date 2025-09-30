@@ -331,8 +331,8 @@ namespace Loki
             else if (e.Item is InventoryListItem item)
             {
                 string[] filterItems = ItemSearch.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-                e.Accepted = filterItems.Any(filterItem =>
-                    item.Name.Contains(filterItem, StringComparison.OrdinalIgnoreCase));
+                e.Accepted = filterItems.All(filterItem =>
+                    item.Name.Contains(filterItem, StringComparison.OrdinalIgnoreCase) || item.Category.Contains(filterItem, StringComparison.OrdinalIgnoreCase));
             }
         }
 
