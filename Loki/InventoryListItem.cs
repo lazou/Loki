@@ -17,7 +17,7 @@ namespace Loki
             ItemData = itemData;
         }
 
-        public static List<InventoryListItem> AllItems = ItemDb.AllItems
+        public static List<InventoryListItem> AllItems = ItemDb.AllItems.Where(item => item.ItemType != ItemType.Customization && item.ItemType != ItemType.AmmoNonEquipable)
             .Select(CreateListItem).ToList();
 
         private static InventoryListItem CreateListItem(SharedItemData itemData)
